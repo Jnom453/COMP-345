@@ -1,0 +1,16 @@
+# Assignment 1
+Group that worked on it:
+Jana Alnoman 40272288
+Adila Burga 40319763
+Chloe Fokom 40342914
+Emine Nisa Mahmutogullari 40375863
+## How to Run
+
+Open the terminal in the 'Assignment 1' folder.
+
+Compile:
+g++ -std=c++17 -Wall -Wextra -pedantic *.cpp -o tower_defense.exe
+
+Run:
+./tower_defense.exe
+
