@@ -13,6 +13,8 @@ private:
 
     const int cellSize;
 
+    bool needsRedraw;
+    
     void drawMap();
 
 public:

@@ -6,19 +6,23 @@ MapObserver::MapObserver(Map& map)
     : map(map),
       window(sf::VideoMode({800u, 600u}),
              "Tower Defense - Map Observer"),
-      cellSize(40)
+      cellSize(40),
+      needsRedraw(true)
 {
 }
 
 void MapObserver::update()
 {
-    drawMap();
+    needsRedraw = true;
 }
 
 void MapObserver::drawMap()
 {
     if (!window.isOpen())
         return;
+
+    if (!needsRedraw)
+    return;
 
     window.clear(sf::Color(35, 40, 50));
 
@@ -65,6 +69,8 @@ void MapObserver::drawMap()
     }
 
     window.display();
+
+    needsRedraw = false;
 }
 
 void MapObserver::run()
