@@ -1,23 +1,24 @@
-#ifndef MAPOBSERVER_H
-#define MAPOBSERVER_H
+#ifndef MAP_OBSERVER_H
+#define MAP_OBSERVER_H
 
 #include "Observer.h"
 #include "Map.h"
-#include <_SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
-class MapObserver : public Observer 
+class MapObserver : public Observer
 {
-    private:
-        Map& map;
-        sf::RenderWindow window;
+private:
+    Map& map;
+    sf::RenderWindow window;
 
-        const int cellSize;
-        void drawMap();
+    const int cellSize;
 
-    public:
-        explicit MabObserver(Map& map);
-        void update() override;
-        void run();
+    void drawMap();
+
+public:
+    explicit MapObserver(Map& map);
+    void update() override;
+    void run();
 };
 
 #endif

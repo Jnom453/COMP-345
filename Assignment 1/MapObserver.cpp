@@ -1,11 +1,12 @@
 #include "MapObserver.h"
 #include "Cell.h"
+#include <optional>
 
-MapObserver:: MapObserver(Map& mao)
+MapObserver::MapObserver(Map& map)
     : map(map),
-        window(sf::VideoMode({800u, 600u}), "Tower Defense - Map Obserrver"),
-        cellSize(40)
-
+      window(sf::VideoMode({800u, 600u}),
+             "Tower Defense - Map Observer"),
+      cellSize(40)
 {
 }
 
@@ -19,17 +20,18 @@ void MapObserver::drawMap()
     if (!window.isOpen())
         return;
 
-    window.clear(sf::Color::(35, 40, 50));
+    window.clear(sf::Color(35, 40, 50));
 
-    int mapWidth = map.getWidth();
-    int mapHeight = map.getHeight();
+    const int mapWidth = map.getWidth();
+    const int mapHeight = map.getHeight();
 
-    float offsetX = 
+    const float offsetX =
         (800.0f - mapWidth * cellSize) / 2.0f;
-    float offsetY = 
+
+    const float offsetY =
         (600.0f - mapHeight * cellSize) / 2.0f;
 
-    for ( int row = 0; row < mapHeight; ++row)
+    for (int row = 0; row < mapHeight; ++row)
     {
         for (int column = 0; column < mapWidth; ++column)
         {
@@ -47,7 +49,7 @@ void MapObserver::drawMap()
                 )
             );
 
-            int type = map.getCellType(row, column);
+            const int type = map.getCellType(row, column);
 
             if (type == ENTRY)
                 cell.setFillColor(sf::Color(70, 160, 240));
