@@ -42,7 +42,7 @@ class Observable
         }
 
     protected:
-        void notifyObservers{}
+        void notifyObservers()
         {
             std::vector<Observer*> currentObservers = observers;
 

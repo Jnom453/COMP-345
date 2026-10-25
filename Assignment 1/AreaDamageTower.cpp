@@ -22,7 +22,7 @@ void AreaDamageTower::attackMultiple(
     std::vector<Critter*>& targets
 )
 {
-    for (int i = 0; i < targets.size(); i++)
+    for (std:: size_t int i = 0; i < targets.size(); i++)
     {
         if (targets[i] != NULL)
         {

@@ -27,7 +27,7 @@ void CritterGroup::display() const
 {
     cout << "\nCritter Group\n";
 
-    for (int i = 0; i < critters.size(); i++)
+    for (std::size_t int i = 0; i < critters.size(); i++)
     {
         critters[i].display();
     }
