@@ -2,11 +2,12 @@
 #define TOWER_H
 
 #include <string>
+#include "Observable.h"
 
 class Critter;
 class Player;
 
-class Tower
+class Tower : public Observable
 {
 protected:
     std::string name;

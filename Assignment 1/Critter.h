@@ -1,7 +1,9 @@
 #ifndef CRITTER_H
 #define CRITTER_H
 
-class Critter
+#include "Observable.h"
+
+class Critter : public Observable
 {
 private:
     int reward;

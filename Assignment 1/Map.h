@@ -3,8 +3,9 @@
 
 #include <vector>
 #include "Cell.h"
+#include "Observable.h"
 
-class Map
+class Map : public Observable
 {
 private:
     int width;

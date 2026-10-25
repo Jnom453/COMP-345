@@ -73,6 +73,8 @@ void Map::setCell(int row, int column, int type)
         exitRow = -1;
         exitColumn = -1;
     }
+
+    notifyObservers();
 }
 
 int Map::getCellType(int row, int column) const
@@ -108,7 +110,10 @@ bool Map::setEntry(int row, int column)
 
     cells[row][column].setType(ENTRY);
 
+    notifyObservers();
+
     return true;
+
 }
 
 bool Map::setExit(int row, int column)
@@ -133,6 +138,8 @@ bool Map::setExit(int row, int column)
     exitColumn = column;
 
     cells[row][column].setType(EXIT);
+
+    notifyObservers();
 
     return true;
 }

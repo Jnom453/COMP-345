@@ -70,6 +70,8 @@ void Critter::takeDamage(int damage)
         hitPoints = 0;
         alive = false;
     }
+
+    notifyObservers();
 }
 
 void Critter::slow(double multiplier)
@@ -78,6 +80,8 @@ void Critter::slow(double multiplier)
     {
         speed = speed * multiplier;
     }
+    
+    notifyObservers();
 }
 
 void Critter::move()
@@ -86,11 +90,15 @@ void Critter::move()
     {
         position = position + speed;
     }
+
+    notifyObservers();
 }
 
 void Critter::reachExit()
 {
     position = 100.0;
+
+    notifyObservers();
 }
 
 void Critter::display() const

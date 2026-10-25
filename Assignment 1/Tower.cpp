@@ -82,6 +82,8 @@ bool Tower::upgrade(Player& player)
     power = power + 5;
     range = range + 1.0;
 
+    notifyObservers();
+
     return true;
 }
 
