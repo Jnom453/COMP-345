@@ -23,6 +23,9 @@ int main()
     // Register the observer with the map
     map.attach(&mapObserver);
 
+    // Test that changing the map notifies its observer
+    map.setCell(4, 4, PATH);
+
     // Open and run the GUI
     mapObserver.run();
 
