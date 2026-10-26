@@ -3,8 +3,9 @@
 
 #include <vector>
 #include "Critter.h"
+#include "Observable.h"
 
-class CritterGroup
+class CritterGroup : public Observable
 {
 private:
     std::vector<Critter> critters;

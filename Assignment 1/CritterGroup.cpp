@@ -6,17 +6,16 @@ using namespace std;
 void CritterGroup::addCritter(const Critter& critter)
 {
     critters.push_back(critter);
+    notifyObservers();
 }
 
 bool CritterGroup::removeCritter(int index)
 {
-    if (index < 0 ||
-        index >= static_cast<int>(critters.size()))
-    {
+    if (index < 0 || index >= static_cast<int>(critters.size()))
         return false;
-    }
 
     critters.erase(critters.begin() + index);
+    notifyObservers();
     return true;
 }
 
