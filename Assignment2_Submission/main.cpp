@@ -20,8 +20,8 @@ int main()
 
     Map map(12, 10);
 
-    for (int x = 0; x < 12; ++x)
-        map.setCell(x, 5, PATH);
+    for (int column = 0; column < 12; ++column)
+        map.setCell(5, column, PATH);
 
     map.setEntry(5, 0);
     map.setExit(5, 11);
