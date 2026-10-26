@@ -11,11 +11,11 @@ private:
 
 public:
     void addCritter(const Critter& critter);
+    bool removeCritter(int index);
 
     int getSize() const;
 
     Critter& getCritter(int index);
-
     const Critter& getCritter(int index) const;
 
     void display() const;

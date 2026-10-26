@@ -8,9 +8,21 @@ void CritterGroup::addCritter(const Critter& critter)
     critters.push_back(critter);
 }
 
+bool CritterGroup::removeCritter(int index)
+{
+    if (index < 0 ||
+        index >= static_cast<int>(critters.size()))
+    {
+        return false;
+    }
+
+    critters.erase(critters.begin() + index);
+    return true;
+}
+
 int CritterGroup::getSize() const
 {
-    return critters.size();
+    return static_cast<int>(critters.size());
 }
 
 Critter& CritterGroup::getCritter(int index)
@@ -27,7 +39,7 @@ void CritterGroup::display() const
 {
     cout << "\nCritter Group\n";
 
-    for (std::size_t int i = 0; i < critters.size(); i++)
+    for (std::size_t i = 0; i < critters.size(); ++i)
     {
         critters[i].display();
     }
