@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['takedamage_0',['takeDamage',['../class_critter.html#a963ccea758c0b04129a372572704c1fc',1,'Critter']]],
+  ['team_1',['Team',['../index.html#team',1,'']]],
+  ['the_20playable_20game_2',['The playable game',['../index.html#playable',1,'']]],
+  ['this_20build_3',['Scope of this build',['../index.html#scope',1,'']]],
+  ['this_20documentation_4',['Building and generating this documentation',['../index.html#build',1,'']]],
+  ['timeleft_5',['timeLeft',['../struct_game_1_1_shot.html#a1d6513326daa0c9bf8b6ffa340fb98d3',1,'Game::Shot']]],
+  ['tocolumn_6',['toColumn',['../struct_game_1_1_shot.html#afc4ea2309d08c73bb5ea5f8ee9219b8e',1,'Game::Shot']]],
+  ['torow_7',['toRow',['../struct_game_1_1_shot.html#a1c95515b0d4870d602a7254d6452e9cd',1,'Game::Shot']]],
+  ['tower_8',['Tower',['../class_tower.html',1,'Tower'],['../class_tower.html#a685cd3964f6634a80ae05b3e977dcb5c',1,'Tower::Tower()']]],
+  ['tower_9',['tower',['../struct_game_1_1_placed_tower.html#a29c0384f5f5a09eb77cb0dee8145a9d6',1,'Game::PlacedTower::tower'],['../class_tower_observer.html#aa3e9b6ac49d503d547be4d2c5c700220',1,'TowerObserver::tower']]],
+  ['tower_20defense_20comp_20345_20intermediate_20delivery_10',['Tower Defense (COMP 345 - intermediate delivery)',['../index.html',1,'']]],
+  ['tower_2ecpp_11',['Tower.cpp',['../_tower_8cpp.html',1,'']]],
+  ['tower_2eh_12',['Tower.h',['../_tower_8h.html',1,'']]],
+  ['towercost_13',['towerCost',['../class_game.html#a298e439c029ab29419ffd96ebae0ce05',1,'Game']]],
+  ['towername_14',['towerName',['../class_game.html#a57fbcceeba87f1673ef986eba05fa105',1,'Game']]],
+  ['towerobserver_15',['TowerObserver',['../class_tower_observer.html',1,'TowerObserver'],['../class_tower_observer.html#acad533b2ece3bb389a40d98d72b50641',1,'TowerObserver::TowerObserver()']]],
+  ['towerobserver_2ecpp_16',['TowerObserver.cpp',['../_tower_observer_8cpp.html',1,'']]],
+  ['towerobserver_2eh_17',['TowerObserver.h',['../_tower_observer_8h.html',1,'']]],
+  ['towers_18',['Towers',['../index.html#rules_towers',1,'']]],
+  ['towers_19',['towers',['../class_game.html#a5abaa5d3abe8ba2daaf84ce2bd59b5b8',1,'Game']]],
+  ['towertype_20',['TowerType',['../class_game.html#a212913ffe021a1868d1766bd3486a147',1,'Game']]],
+  ['type_21',['type',['../class_cell.html#a6a3f3ec6c13524695884f3a302b23d88',1,'Cell::type'],['../struct_game_1_1_placed_tower.html#a9837415d7b8cf687c2c6ed24a7debf5d',1,'Game::PlacedTower::type']]]
+];

@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="5,80,93,106"/>
+<area shape="rect" id="Node000001" href="$class_critter.html" title="An enemy unit of the game." alt="" coords="158,5,216,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="85,70,139,40,162,30,158,33,142,45,89,74"/>
+<area shape="rect" id="Node000002" href="$class_critter_group.html" title="The group of critters that makes up one wave." alt="" coords="141,55,233,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="107,80,142,74,138,78,109,84"/>
+<area shape="rect" id="Node000003" href="$class_map.html" title="A rectangular grid of cells with an entry point and an exit point." alt="" coords="164,104,210,130"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="107,100,165,111,161,114,108,106"/>
+<area shape="rect" id="Node000004" href="$class_tower.html" title="Base class of every tower in the game." alt="" coords="159,153,215,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="88,111,142,140,163,152,158,153,139,145,88,116"/>
+<area shape="rect" id="Node000005" href="$class_area_damage_tower.html" title="Area of effect tower: a shot damages every critter in a group." alt="" coords="285,104,417,130"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="229,151,308,129,303,131,231,156"/>
+<area shape="rect" id="Node000006" href="$class_direct_damage_tower.html" title="The basic tower: each shot damages one critter." alt="" coords="281,153,421,179"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="230,164,283,166,278,167,231,169"/>
+<area shape="rect" id="Node000007" href="$class_slow_tower.html" title="Special effect tower: each shot damages a critter and halves its speed." alt="" coords="308,203,394,228"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="230,176,311,203,306,203,230,182"/>
+</map>

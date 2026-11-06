@@ -1,0 +1,7 @@
+<map id="DirectDamageTower" name="DirectDamageTower">
+<area shape="rect" id="Node000001" title="The basic tower: each shot damages one critter." alt="" coords="5,153,146,178"/>
+<area shape="rect" id="Node000002" href="$class_tower.html" title="Base class of every tower in the game." alt="" coords="47,79,104,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,118,78,153,73,151,74,122"/>
+<area shape="rect" id="Node000003" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="32,5,119,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,44,78,79,73,78,74,49"/>
+</map>

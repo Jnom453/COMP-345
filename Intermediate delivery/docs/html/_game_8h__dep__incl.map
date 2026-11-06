@@ -1,0 +1,7 @@
+<map id="Game.h" name="Game.h">
+<area shape="rect" id="Node000001" title="The playable game: rules and game loop, without any graphics." alt="" coords="72,5,140,31"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title=" " alt="" coords="5,79,87,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,42,58,80,54,77,84,43"/>
+<area shape="rect" id="Node000003" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="111,79,224,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,40,160,79,154,78,125,45"/>
+</map>
