@@ -1,0 +1,14 @@
+<map id="Game" name="Game">
+<area shape="rect" id="Node000001" title="The rules and the game loop of the playable Tower Defense game." alt="" coords="158,177,214,203"/>
+<area shape="rect" id="Node000002" href="$class_map.html" title="A rectangular grid of cells with an entry point and an exit point." alt="" coords="5,80,52,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,114,104,151,160,178,154,179,101,155,52,119"/>
+<area shape="rect" id="Node000003" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="30,5,118,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,47,38,81,33,79,59,42"/>
+<area shape="rect" id="Node000006" href="$class_critter_group.html" title="The group of critters that makes up one wave." alt="" coords="76,80,168,106"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="91,41,117,80,111,80,90,47"/>
+<area shape="rect" id="Node000004" href="$class_player.html" title="Holds the player&#39;s coins, the currency of the game." alt="" coords="193,80,251,106"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,119,193,178,188,175,209,122"/>
+<area shape="rect" id="Node000005" href="$class_critter_group_generator.html" title="Builds a wave of critters that gets harder with the wave number." alt="" coords="275,80,424,106"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="322,114,258,155,212,179,210,174,255,151,317,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,118,157,151,177,177,172,176,153,155,134,122"/>
+</map>

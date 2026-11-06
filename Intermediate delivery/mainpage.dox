@@ -1,0 +1,78 @@
+/**
+@mainpage Tower Defense (COMP 345 - intermediate delivery)
+
+@section team Team
+Jana Alnoman, Chloe Fokom, Emine Nisa Mahmutogullari, Adila Burga (COMP 345).
+
+@section overview Overview
+A tower defense game in C++. Critters enter the map at one point and walk a
+path to the exit. The player spends coins on towers placed on the scenery
+around the path to kill the critters before they escape. This document
+describes the classes and the game rules they implement. The rules follow the
+COMP 345 Project Specifications.
+
+@section rules Game rules implemented
+
+@subsection rules_map Map
+- The map is a grid of cells. A cell is scenery (Cell::canPlaceTower() is true)
+  or path (Cell::isPath() is true).
+- A map has exactly one entry and one exit, both on the path.
+- A map is valid only if a chain of path cells (up, down, left, right) links
+  the entry to the exit (Map::isValid()).
+- Critters appear at the entry and walk toward the exit.
+
+@subsection rules_towers Towers
+- Towers are bought with coins and are placed on scenery cells only.
+- Three types: DirectDamageTower (one target), AreaDamageTower (several
+  targets at once) and SlowTower (damage plus a speed reduction).
+- Every tower has a buying cost, a refund value, a range, a power and a rate
+  of fire (see Tower).
+- A tower can be upgraded up to level 3. An upgrade costs the buying cost
+  times the current level, and adds 5 power and 1.0 range (Tower::upgrade()).
+
+@subsection rules_critters Critters and waves
+- A critter has a level, hit points, strength, speed and reward (see Critter).
+- A critter dies when its hit points reach 0 and then gives its reward in
+  coins to the player.
+- A critter that reaches the exit steals coins from the player, equal to its
+  strength.
+- A slow effect multiplies a critter's speed by a factor between 0 and 1.
+- Critters come in waves (CritterGroup). Each wave is harder than the previous
+  one (CritterGroupGenerator).
+
+@subsection rules_player Player
+- The player starts with an amount of coins (Player).
+- Coins are spent on towers and upgrades, earned by killing critters and
+  lost to critters that reach the exit. The balance never goes below 0.
+
+@section observer Observer design pattern
+Map, Tower, Critter and CritterGroup inherit from Observable. Views inherit
+from Observer and register with Observable::attach(). When the subject changes
+it calls notifyObservers(), which calls Observer::update() on every attached
+view. In this project update() only marks the view as out of date (a
+"needs redraw" flag); the SFML window redraws itself on its next frame by
+reading the subject's current state.
+
+| Subject (Observable) | View (Observer)       |
+|----------------------|-----------------------|
+| Map                  | MapObserver           |
+| Tower                | TowerObserver         |
+| Critter              | CritterObserver       |
+| CritterGroup         | CritterGroupObserver  |
+
+@section playable The playable game
+Game holds the rules of the playable game (placing, upgrading and selling
+towers, waves, shooting, coins and lives). It has no graphics. game_main.cpp
+draws it in one SFML window and turns mouse clicks and key presses into calls
+on Game. The controls are listed in the README and in game_main.cpp.
+
+@section scope Scope of this build
+This is the intermediate delivery. Not implemented yet: a map editor, a
+choice between several maps (the game uses one built-in map) and saving or
+loading maps.
+
+@section build Building and generating this documentation
+See README.md for build and run instructions. To regenerate this
+documentation, run `doxygen Doxyfile` in this folder and open
+`docs/html/index.html`.
+*/

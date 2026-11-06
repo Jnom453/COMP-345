@@ -1,0 +1,17 @@
+<map id="CritterGroupGenerator.h" name="CritterGroupGenerator.h">
+<area shape="rect" id="Node000001" title="Creates the critters of each wave." alt="" coords="25,5,184,31"/>
+<area shape="rect" id="Node000002" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="53,79,156,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,29,107,64,102,63,104,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,300,63,326"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,108,77,128,62,154,50,188,43,223,37,285,32,284,38,222,45,186,57,152,73,125,94,103"/>
+<area shape="rect" id="Node000004" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="71,153,138,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="105,102,107,137,102,136,104,107"/>
+<area shape="rect" id="Node000005" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="80,226,178,252"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="117,102,138,124,153,152,155,168,154,184,145,214,140,211,149,183,150,168,147,154,133,127,118,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="110,176,122,212,117,211,108,181"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="115,252,64,293,60,288,110,253"/>
+<area shape="rect" id="Node000006" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="86,300,171,326"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="130,250,131,285,126,283,127,254"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="196,300,270,326"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="147,250,205,291,200,291,146,255"/>
+</map>

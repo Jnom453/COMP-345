@@ -1,0 +1,11 @@
+<map id="Tower" name="Tower">
+<area shape="rect" id="Node000001" title="Base class of every tower in the game." alt="" coords="203,79,260,105"/>
+<area shape="rect" id="Node000003" href="$class_area_damage_tower.html" title="Area of effect tower: a shot damages every critter in a group." alt="" coords="5,153,138,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,113,100,155,98,150,188,110"/>
+<area shape="rect" id="Node000004" href="$class_direct_damage_tower.html" title="The basic tower: each shot damages one critter." alt="" coords="161,153,302,178"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,118,234,154,229,151,230,122"/>
+<area shape="rect" id="Node000005" href="$class_slow_tower.html" title="Special effect tower: each shot damages a critter and halves its speed." alt="" coords="326,153,412,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="269,110,348,152,343,152,268,115"/>
+<area shape="rect" id="Node000002" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="188,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,44,234,80,229,77,230,49"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="CritterObserver.h" name="CritterObserver.h">
+<area shape="rect" id="Node000001" title="SFML view of a single Critter." alt="" coords="70,5,190,31"/>
+<area shape="rect" id="Node000002" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="5,226,90,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,34,103,54,87,80,74,114,64,149,53,211,48,210,59,148,69,112,82,78,99,51,120,29"/>
+<area shape="rect" id="Node000003" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="96,79,164,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,29,133,64,128,63,129,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="188,79,326,105"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="152,29,225,70,220,72,152,34"/>
+<area shape="rect" id="Node000004" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="90,153,189,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,102,139,138,133,137,131,107"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="126,178,76,219,73,215,121,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,226,171,252"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="142,177,144,212,139,210,138,181"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="194,226,269,252"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="156,176,207,217,202,217,154,181"/>
+</map>

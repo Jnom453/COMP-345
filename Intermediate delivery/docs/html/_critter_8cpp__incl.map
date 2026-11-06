@@ -1,0 +1,15 @@
+<map id="Critter.cpp" name="Critter.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,5,230,31"/>
+<area shape="rect" id="Node000002" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="108,79,176,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,29,161,67,156,64,180,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="200,79,271,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="197,29,222,66,217,66,196,34"/>
+<area shape="rect" id="Node000003" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="93,153,191,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,103,145,138,140,136,141,107"/>
+<area shape="rect" id="Node000004" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="5,226,90,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,178,77,219,74,215,124,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,226,171,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="144,177,145,212,140,209,140,181"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="194,226,269,252"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="158,176,207,216,202,217,156,181"/>
+</map>

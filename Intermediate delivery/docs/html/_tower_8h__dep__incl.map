@@ -1,0 +1,33 @@
+<map id="Tower.h" name="Tower.h">
+<area shape="rect" id="Node000001" title="Base class of all towers." alt="" coords="566,5,633,31"/>
+<area shape="rect" id="Node000002" href="$_area_damage_tower_8h.html" title="Tower that damages several critters at once." alt="" coords="172,79,315,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="549,30,305,81,304,76,554,28"/>
+<area shape="rect" id="Node000005" href="$_direct_damage_tower_8h.html" title="Tower that damages a single critter." alt="" coords="339,79,489,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="557,36,447,81,445,76,551,38"/>
+<area shape="rect" id="Node000008" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="514,79,581,105"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="584,42,558,81,555,76,580,45"/>
+<area shape="rect" id="Node000010" href="$_slow_tower_8h.html" title="Tower that damages and slows a critter." alt="" coords="605,79,700,105"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="619,41,646,79,641,78,616,46"/>
+<area shape="rect" id="Node000012" href="$_tower_8cpp.html" title=" " alt="" coords="870,79,950,105"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="648,28,872,81,867,82,647,33"/>
+<area shape="rect" id="Node000013" href="$_tower_observer_8h.html" title="SFML view of a Tower." alt="" coords="726,79,846,105"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="646,34,757,78,752,78,645,40"/>
+<area shape="rect" id="Node000003" href="$_area_damage_tower_8cpp.html" title=" " alt="" coords="5,153,162,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,112,112,155,110,150,200,111"/>
+<area shape="rect" id="Node000004" href="$_game_8cpp.html" title=" " alt="" coords="374,153,455,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,108,388,152,382,152,286,114"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="416,118,416,154,412,151,412,122"/>
+<area shape="rect" id="Node000006" href="$_direct_damage_tower_8cpp.html" title=" " alt="" coords="185,153,350,178"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="378,111,293,155,292,150,373,112"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html" title=" " alt="" coords="750,153,825,178"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="501,105,739,150,752,155,747,155,738,155,500,111"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="514,112,438,155,436,150,509,113"/>
+<area shape="rect" id="Node000009" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="479,153,592,178"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="545,118,539,154,536,150,541,121"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="600,109,455,155,454,149,595,110"/>
+<area shape="rect" id="Node000011" href="$_slow_tower_8cpp.html" title=" " alt="" coords="617,153,726,178"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="661,117,671,154,666,151,658,121"/>
+<area shape="poly" id="edge17_Node000013_Node000007" title=" " alt="" coords="789,118,789,154,785,150,785,122"/>
+<area shape="rect" id="Node000014" href="$_tower_observer_8cpp.html" title=" " alt="" coords="849,153,982,178"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="822,110,896,153,891,152,821,115"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="CritterGroup.h" name="CritterGroup.h">
+<area shape="rect" id="Node000001" title="A wave of critters." alt="" coords="292,5,396,31"/>
+<area shape="rect" id="Node000002" href="$_critter_group_8cpp.html" title=" " alt="" coords="5,79,123,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,38,113,81,111,76,283,33"/>
+<area shape="rect" id="Node000003" href="$_critter_group_generator_8h.html" title="Creates the critters of each wave." alt="" coords="147,79,306,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,41,248,81,245,76,314,38"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="274,153,342,178"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="339,45,313,154,309,151,335,48"/>
+<area shape="rect" id="Node000008" href="$_critter_group_observer_8h.html" title="SFML view of a CritterGroup." alt="" coords="381,79,536,105"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="377,37,442,78,436,79,376,42"/>
+<area shape="rect" id="Node000010" href="$main_8cpp.html" title=" " alt="" coords="559,153,633,178"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="410,23,482,41,517,56,550,77,567,94,580,115,595,153,590,151,575,117,562,98,546,81,515,61,480,46,411,29"/>
+<area shape="rect" id="Node000004" href="$_critter_group_generator_8cpp.html" title=" " alt="" coords="77,153,251,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="208,115,176,154,173,150,204,118"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="253,113,297,152,292,152,251,118"/>
+<area shape="rect" id="Node000006" href="$_game_8cpp.html" title=" " alt="" coords="206,226,287,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="290,189,258,228,256,224,286,191"/>
+<area shape="rect" id="Node000007" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="311,226,425,252"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="329,188,360,227,355,225,326,192"/>
+<area shape="rect" id="Node000009" href="$_critter_group_observer_8cpp.html" title=" " alt="" coords="366,153,535,178"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="458,118,454,154,450,151,454,122"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="496,110,575,152,570,152,495,115"/>
+</map>

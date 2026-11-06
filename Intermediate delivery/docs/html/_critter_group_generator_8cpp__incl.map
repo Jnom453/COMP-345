@@ -1,0 +1,19 @@
+<map id="CritterGroupGenerator.cpp" name="CritterGroupGenerator.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,5,191,31"/>
+<area shape="rect" id="Node000002" href="$_critter_group_generator_8h.html" title="Creates the critters of each wave." alt="" coords="25,79,184,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,29,107,64,102,63,104,34"/>
+<area shape="rect" id="Node000003" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="53,153,156,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,102,107,137,102,136,104,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,374,63,399"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,181,77,201,62,227,50,261,43,297,37,358,32,357,38,296,45,260,57,225,73,198,94,177"/>
+<area shape="rect" id="Node000005" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="71,226,138,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="105,176,107,211,102,210,104,181"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="80,300,178,326"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="117,176,138,198,153,225,155,242,154,258,145,288,140,285,149,257,150,242,147,227,133,201,118,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="110,250,122,286,117,285,108,255"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="115,326,64,366,60,362,110,327"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="86,374,171,399"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="130,324,131,359,126,357,127,328"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="196,374,270,399"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="147,324,205,364,200,365,146,329"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="Cell.h" name="Cell.h">
+<area shape="rect" id="Node000001" title="One square of the game map and its possible types." alt="" coords="166,5,221,31"/>
+<area shape="rect" id="Node000002" href="$_cell_8cpp.html" title=" " alt="" coords="5,79,75,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,40,68,81,65,76,155,36"/>
+<area shape="rect" id="Node000003" href="$_game_8cpp.html" title=" " alt="" coords="71,226,153,252"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,44,140,154,117,227,113,225,135,152,179,47"/>
+<area shape="rect" id="Node000004" href="$_map_8h.html" title="The game map: a grid of cells with one entry and one exit." alt="" coords="206,79,263,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,42,230,79,225,78,207,47"/>
+<area shape="rect" id="Node000009" href="$_map_observer_8cpp.html" title=" " alt="" coords="421,226,544,252"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="236,27,288,43,348,69,408,104,435,126,459,151,471,170,478,190,484,227,480,225,473,191,466,172,455,154,432,130,405,108,345,73,286,48,236,32"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="149,153,216,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="219,115,193,154,190,150,215,119"/>
+<area shape="rect" id="Node000007" href="$_map_8cpp.html" title=" " alt="" coords="240,153,312,178"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="250,115,272,153,266,152,248,120"/>
+<area shape="rect" id="Node000008" href="$_map_observer_8h.html" title="SFML view of a Map." alt="" coords="336,153,445,178"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="275,109,367,152,361,153,275,114"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="163,188,126,228,122,224,158,190"/>
+<area shape="rect" id="Node000006" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="177,226,290,252"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="201,188,227,226,222,225,198,193"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="419,186,470,226,465,225,417,191"/>
+<area shape="rect" id="Node000010" href="$main_8cpp.html" title=" " alt="" coords="323,226,397,252"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="382,191,367,228,363,224,377,194"/>
+</map>

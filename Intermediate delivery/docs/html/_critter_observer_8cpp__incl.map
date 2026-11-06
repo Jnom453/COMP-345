@@ -1,0 +1,25 @@
+<map id="CritterObserver.cpp" name="CritterObserver.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="186,5,320,31"/>
+<area shape="rect" id="Node000002" href="$_font_loader_8h.html" title="Loads a system font on macOS, Windows or Linux." alt="" coords="14,79,110,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,34,110,75,107,71,222,29"/>
+<area shape="rect" id="Node000004" href="$_critter_observer_8h.html" title="SFML view of a single Critter." alt="" coords="134,79,254,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,33,215,69,211,65,245,29"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="278,79,344,105"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="263,29,295,67,289,67,262,34"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="369,79,438,105"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="278,29,366,71,361,73,278,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,143,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,102,72,137,67,137,64,108"/>
+<area shape="poly" id="edge10_Node000004_Node000003" title=" " alt="" coords="172,107,109,146,106,142,175,103"/>
+<area shape="rect" id="Node000005" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="141,300,226,326"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="196,104,187,285,182,284,191,106"/>
+<area shape="rect" id="Node000006" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="234,153,301,178"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="206,102,247,142,242,142,206,108"/>
+<area shape="rect" id="Node000007" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="226,226,324,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="270,176,275,212,270,210,267,181"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="262,252,212,293,209,288,257,253"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="249,300,307,326"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="278,250,279,286,275,283,274,254"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="330,300,404,326"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="292,250,343,291,337,290,290,255"/>
+</map>
