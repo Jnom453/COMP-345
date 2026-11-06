@@ -1,3 +1,8 @@
+// The rules of the playable game. There is no drawing code here: game_main.cpp
+// draws what this file computes. The big picture is:
+//   - the player places towers (placeTower, upgradeTower, sellTower),
+//   - startWave() asks CritterGroupGenerator for a wave of critters,
+//   - update() is called many times per second and, each time, releases critters, moves them, lets towers shoot, pays rewards and takes lives.
 #include "Game.h"
 
 #include <cmath>
@@ -8,7 +13,9 @@
 #include "AreaDamageTower.h"
 #include "SlowTower.h"
 
+// One critter of a wave appears every second.
 const double Game::SPAWN_INTERVAL = 1.0;
+// Critters move one step every 0.2 seconds.
 const double Game::MOVE_INTERVAL = 0.2;
 
 Game::Game()
@@ -24,6 +31,9 @@ Game::Game()
     reset();
 }
 
+// Builds the one map of the game: a snake-shaped path with the entry on the
+// left and the exit on the right. The path cells are also saved, in walking
+// order, in the "path" list so a critter's position can be turned into a cell.
 void Game::buildMap()
 {
     map = Map(12, 10);
@@ -43,6 +53,7 @@ void Game::buildMap()
     map.setExit(path.back().first, path.back().second);
 }
 
+// Puts the game back in its starting state (used by the constructor and by R).
 void Game::reset()
 {
     buildMap();
@@ -61,6 +72,8 @@ void Game::reset()
     message = "Place towers on the green cells, then press SPACE to start wave 1.";
 }
 
+// The cost and name of a tower type come from the tower classes themselves,
+// so the numbers are only written once (in DirectDamageTower, AreaDamageTower, SlowTower).
 int Game::towerCost(int type)
 {
     switch (type)
@@ -81,6 +94,7 @@ std::string Game::towerName(int type)
     }
 }
 
+// Returns the index of the tower on a cell, or -1 if the cell has none.
 int Game::findTower(int row, int column) const
 {
     for (std::size_t i = 0; i < towers.size(); ++i)
@@ -89,6 +103,9 @@ int Game::findTower(int row, int column) const
     return -1;
 }
 
+// Rules for placing a tower: the game must be running, the cell must be
+// scenery (Cell rule: towers only go on scenery), the cell must be empty,
+// and the player must be able to pay the buying cost.
 bool Game::placeTower(int row, int column, int type)
 {
     if (state == GAME_OVER || state == VICTORY)
@@ -128,6 +145,9 @@ bool Game::placeTower(int row, int column, int type)
     return true;
 }
 
+// The upgrade itself (cost = buying cost x level, +5 power, +1 range, max level 3)
+// is done by Tower::upgrade(). This function only finds the tower and reports
+// why an upgrade failed.
 bool Game::upgradeTower(int row, int column)
 {
     if (state == GAME_OVER || state == VICTORY)
@@ -154,6 +174,7 @@ bool Game::upgradeTower(int row, int column)
     return true;
 }
 
+// Removes the tower and gives the player its refund value.
 bool Game::sellTower(int row, int column)
 {
     if (state == GAME_OVER || state == VICTORY)
@@ -172,6 +193,9 @@ bool Game::sellTower(int row, int column)
     return true;
 }
 
+// Asks the generator for the critters of the current wave and remembers their
+// starting hit points (for the health bars). No critter is on the map yet:
+// update() releases them one by one.
 bool Game::startWave()
 {
     if (state != PLANNING)
@@ -191,6 +215,7 @@ bool Game::startWave()
     return true;
 }
 
+// A critter is "on the map" if it was released, is still alive and has not escaped.
 bool Game::isCritterOnMap(int index) const
 {
     return index >= 0 && index < released
@@ -198,6 +223,9 @@ bool Game::isCritterOnMap(int index) const
         && wave.getCritter(index).isAlive();
 }
 
+// A critter stores its progress as a number from 0 (entry) to 100 (exit).
+// This turns that number into a point between two cells of the path,
+// so the window can draw it and the towers can measure the distance to it.
 void Game::getCritterLocation(int index, double& row, double& column) const
 {
     double position = wave.getCritter(index).getPosition();
@@ -217,6 +245,7 @@ void Game::getCritterLocation(int index, double& row, double& column) const
     column = path[i].second + (path[i + 1].second - path[i].second) * f;
 }
 
+// Straight-line distance, in cells, between a tower and a critter.
 double Game::distanceToCritter(const PlacedTower& t, int critterIndex) const
 {
     double r, c;
@@ -226,6 +255,8 @@ double Game::distanceToCritter(const PlacedTower& t, int critterIndex) const
     return std::sqrt(dr * dr + dc * dc);
 }
 
+// Rule: a critter that reaches the exit costs one life and steals coins equal
+// to its strength. At 0 lives the game is over.
 void Game::escapeCritter(int index)
 {
     wave.getCritter(index).reachExit();
@@ -241,6 +272,7 @@ void Game::escapeCritter(int index)
     }
 }
 
+// Rule: killing a critter gives its reward in coins (paid once per critter).
 void Game::collectKills()
 {
     for (int i = 0; i < wave.getSize(); ++i)
@@ -253,6 +285,11 @@ void Game::collectKills()
     }
 }
 
+// Each tower has a cooldown (1 / rate of fire). When it is ready it looks for
+// critters inside its range:
+//   - AreaDamageTower: hits every critter in range (attackMultiple),
+//   - the other towers: hit the critter closest to the exit (the one furthest
+//     along the path); SlowTower::attack also slows it.
 void Game::fireTowers(double seconds)
 {
     for (std::size_t k = 0; k < towers.size(); ++k)
@@ -308,6 +345,8 @@ void Game::fireTowers(double seconds)
     }
 }
 
+// A wave is over when every critter has been killed or has escaped.
+// Then the game is won (after the last wave) or goes back to PLANNING.
 void Game::checkWaveEnd()
 {
     if (state != WAVE_RUNNING || released < wave.getSize())
@@ -328,6 +367,9 @@ void Game::checkWaveEnd()
               + std::to_string(waveNumber) + ".";
 }
 
+// Called every frame with the time since the last frame. Order of work:
+// 1) fade old shot lines, 2) release the next critter, 3) move the critters,
+// 4) towers shoot, 5) pay rewards for kills, 6) check whether the wave ended.
 void Game::update(double seconds)
 {
     for (std::size_t i = 0; i < shots.size();)
@@ -375,6 +417,7 @@ void Game::update(double seconds)
     checkWaveEnd();
 }
 
+// The functions below are simple getters used by game_main.cpp to draw the game.
 const Map& Game::getMap() const { return map; }
 const std::vector<std::pair<int, int> >& Game::getPath() const { return path; }
 int Game::getCoins() const { return player.getCoins(); }

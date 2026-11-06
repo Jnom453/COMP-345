@@ -24,12 +24,15 @@
 
 namespace
 {
+// Size and position of things in the window, in pixels.
+// CELL is the side of one map cell; MAP_X / MAP_Y is where the map starts.
 const float CELL = 48.f;
 const float MAP_X = 32.f;
 const float MAP_Y = 100.f;
 const unsigned WINDOW_W = 640;
 const unsigned WINDOW_H = 700;
 
+// Colour used for each tower type (orange = direct, purple = area, cyan = slow).
 sf::Color towerColor(int type)
 {
     if (type == Game::AREA_DAMAGE) return sf::Color(160, 90, 220);
@@ -37,6 +40,7 @@ sf::Color towerColor(int type)
     return sf::Color(240, 150, 40);
 }
 
+// Draws a line of text. Does nothing if no font could be loaded.
 void drawText(sf::RenderWindow& window, const sf::Font& font, bool hasFont,
               const std::string& str, float x, float y, unsigned size,
               sf::Color color = sf::Color::White)
@@ -49,6 +53,7 @@ void drawText(sf::RenderWindow& window, const sf::Font& font, bool hasFont,
     window.draw(text);
 }
 
+// Draws a straight line (used for the yellow shot lines).
 void drawLine(sf::RenderWindow& window, float x1, float y1, float x2, float y2,
               sf::Color color)
 {
@@ -61,6 +66,10 @@ void drawLine(sf::RenderWindow& window, float x1, float y1, float x2, float y2,
 }
 }
 
+// main() has two parts that repeat every frame (about 60 times per second):
+//   1) read what the player did (mouse clicks and key presses) and tell Game,
+//   2) ask Game to advance time (game.update) and draw its current state.
+// No game rule is decided here; they are all in Game.cpp.
 int main()
 {
     sf::RenderWindow window(sf::VideoMode({WINDOW_W, WINDOW_H}), "Tower Defense");
@@ -69,20 +78,25 @@ int main()
     sf::Font font;
     const bool hasFont = loadSystemFont(font);
 
-    Game game;
+    Game game; // all the rules and the state of the game
+    // What the player has chosen: the tower type to build with the next click,
+    // and the cell of the tower that is selected (-1 means none).
     int selectedType = Game::DIRECT_DAMAGE;
     int selectedRow = -1;
     int selectedColumn = -1;
-    sf::Clock clock;
+    sf::Clock clock; // measures the time between two frames
 
     while (window.isOpen())
     {
+        // ---- 1) input: handle every event that happened since the last frame ----
         while (const std::optional<sf::Event> event = window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
             {
                 window.close();
             }
+            // Keyboard: 1/2/3 choose a tower type, SPACE starts a wave,
+            // U upgrades and S sells the selected tower, R restarts, ESC quits.
             else if (const auto* key = event->getIf<sf::Event::KeyPressed>())
             {
                 switch (key->code)
@@ -108,10 +122,12 @@ int main()
                 default: break;
                 }
             }
+            // Mouse: a left click on the map selects a tower or builds a new one.
             else if (const auto* click = event->getIf<sf::Event::MouseButtonPressed>())
             {
                 if (click->button == sf::Mouse::Button::Left)
                 {
+                    // Turn the pixel position of the click into a row and a column.
                     float fx = (click->position.x - MAP_X) / CELL;
                     float fy = (click->position.y - MAP_Y) / CELL;
                     int column = static_cast<int>(fx);
@@ -120,11 +136,14 @@ int main()
                                   game.getMap().isInside(row, column);
                     if (inside)
                     {
+                        // A tower is already there: just select it.
                         if (game.findTower(row, column) >= 0)
                         {
                             selectedRow = row;
                             selectedColumn = column;
                         }
+                        // Empty cell: try to buy and place the chosen tower
+                        // (Game checks that the cell is scenery and the player can pay).
                         else if (game.placeTower(row, column, selectedType))
                         {
                             selectedRow = row;
@@ -135,11 +154,14 @@ int main()
             }
         }
 
+        // ---- 2) update: let the game advance by the time since the last frame ----
         game.update(clock.restart().asSeconds());
 
-        // ---- drawing ----
+        // ---- 3) drawing: everything is drawn again each frame, back to front ----
         window.clear(sf::Color(35, 40, 50));
 
+        // The map: one coloured square per cell (blue entry, red exit,
+        // brown path, green scenery).
         const Map& map = game.getMap();
         for (int r = 0; r < map.getHeight(); ++r)
         {
@@ -213,7 +235,7 @@ int main()
                      sf::Color(255, 255, 120));
         }
 
-        // Critters with a hit point bar.
+        // Critters: a red dot with a green bar showing the hit points left.
         for (int i = 0; i < game.getCritterCount(); ++i)
         {
             if (!game.isCritterOnMap(i))
@@ -243,7 +265,7 @@ int main()
             window.draw(bar);
         }
 
-        // HUD.
+        // HUD (heads-up display): coins, lives, wave number and the last message.
         std::string waveText = "Wave " + std::to_string(game.getWave()) + "/" +
                                std::to_string(Game::MAX_WAVES);
         drawText(window, font, hasFont, "Coins: " + std::to_string(game.getCoins()),
@@ -254,6 +276,8 @@ int main()
         drawText(window, font, hasFont, game.getMessage(), 20.f, 52.f, 17,
                  sf::Color(200, 220, 255));
 
+        // Help text under the map: tower prices, the type to build, and the
+        // stats and upgrade/sell prices of the selected tower.
         float y = MAP_Y + map.getHeight() * CELL + 10.f;
         std::string build = "Build: [1] " + Game::towerName(Game::DIRECT_DAMAGE) + " $" +
                             std::to_string(Game::towerCost(Game::DIRECT_DAMAGE)) +
