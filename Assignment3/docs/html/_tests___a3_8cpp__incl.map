@@ -1,0 +1,93 @@
+<map id="Tests_A3.cpp" name="Tests_A3.cpp">
+<area shape="rect" id="Node000001" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="730,5,831,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="727,21,615,27,455,36,270,54,79,81,77,76,269,48,454,31,615,22,732,19"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,79,158,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="727,24,491,44,335,61,177,82,174,82,171,78,176,76,334,55,490,39,732,21"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="589,447,658,473"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="728,23,443,44,301,60,252,70,225,81,208,99,200,117,198,164,198,314,201,328,209,340,240,365,286,386,343,405,467,433,576,453,571,453,466,438,341,410,284,391,237,369,205,344,196,330,193,314,193,164,195,115,204,96,222,77,250,65,300,55,442,38,732,20"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1207,447,1261,473"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="778,30,766,79,762,129,766,178,774,225,787,261,808,292,844,324,886,353,933,377,1030,415,1121,438,1195,454,1189,454,1119,443,1028,420,930,382,884,357,840,328,804,296,782,264,769,227,761,179,756,129,761,79,774,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1521,447,1579,473"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="831,18,1012,23,1260,34,1508,52,1610,63,1688,76,1760,85,1827,90,1854,97,1876,110,1890,132,1895,164,1895,314,1894,362,1886,382,1869,402,1594,454,1594,448,1866,397,1881,379,1888,361,1890,314,1890,164,1885,134,1872,114,1852,102,1826,96,1760,91,1687,82,1610,68,1507,57,1260,40,1012,29,832,23"/>
+<area shape="rect" id="Node000007" href="$_area_damage_tower_8h.html" title="Tower that damages several critters at once." alt="" coords="1036,226,1178,252"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="799,29,1080,217,1074,218,798,34"/>
+<area shape="rect" id="Node000012" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="1013,374,1146,399"/>
+<area shape="poly" id="edge61_Node000001_Node000012" title=" " alt="" coords="779,29,774,72,771,129,778,192,788,223,803,251,822,273,843,294,894,327,948,350,1001,370,996,369,946,355,891,331,840,298,818,277,798,253,783,225,773,194,765,129,769,71,776,34"/>
+<area shape="rect" id="Node000013" href="$_burning_decorator_8h.html" title="Decorator that sets the hit critter on fire." alt="" coords="236,79,368,105"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="728,29,384,81,382,76,731,25"/>
+<area shape="rect" id="Node000016" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="1524,300,1592,326"/>
+<area shape="poly" id="edge25_Node000001_Node000016" title=" " alt="" coords="831,18,1001,22,1230,33,1458,50,1552,62,1623,76,1707,98,1739,116,1768,151,1777,178,1773,204,1756,226,1732,246,1670,279,1607,301,1606,296,1668,274,1729,242,1753,223,1768,202,1772,179,1764,154,1736,120,1705,103,1621,82,1551,67,1457,55,1230,38,1001,28,832,23"/>
+<area shape="rect" id="Node000017" href="$_critter_factory_8h.html" title="Factory pattern: creates critters of one kind." alt="" coords="1354,226,1464,252"/>
+<area shape="poly" id="edge28_Node000001_Node000017" title=" " alt="" coords="831,17,954,20,1124,28,1320,46,1420,59,1517,76,1588,85,1647,89,1673,94,1699,105,1723,124,1747,151,1753,166,1746,180,1479,228,1478,223,1743,176,1747,166,1742,154,1719,128,1696,110,1672,100,1646,94,1587,90,1516,82,1419,65,1319,51,1124,33,954,25,832,22"/>
+<area shape="rect" id="Node000018" href="$_direct_damage_tower_8h.html" title="Tower that damages a single critter." alt="" coords="812,226,962,252"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="784,29,800,96,814,137,834,177,865,216,859,215,829,180,809,139,795,97,781,34"/>
+<area shape="rect" id="Node000019" href="$_freezing_decorator_8h.html" title="Decorator that freezes the hit critter." alt="" coords="412,79,550,105"/>
+<area shape="poly" id="edge33_Node000001_Node000019" title=" " alt="" coords="727,33,548,77,546,72,732,30"/>
+<area shape="rect" id="Node000020" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="1375,79,1442,105"/>
+<area shape="poly" id="edge35_Node000001_Node000020" title=" " alt="" coords="831,23,1362,84,1357,86,832,28"/>
+<area shape="rect" id="Node000024" href="$_player_8h.html" title="The player&#39;s coins." alt="" coords="1664,153,1732,178"/>
+<area shape="poly" id="edge56_Node000001_Node000024" title=" " alt="" coords="831,17,945,20,1100,29,1277,47,1367,60,1455,76,1566,109,1659,146,1654,146,1564,114,1453,82,1366,65,1276,52,1100,34,945,25,832,22"/>
+<area shape="rect" id="Node000026" href="$_wave_factory_8h.html" title="Builds the waves of critters, choosing the kinds from the progress of the game." alt="" coords="1303,153,1410,178"/>
+<area shape="poly" id="edge62_Node000001_Node000026" title=" " alt="" coords="832,24,955,45,1100,76,1215,111,1314,147,1308,147,1213,116,1099,82,954,50,832,30"/>
+<area shape="rect" id="Node000027" href="$_level_up_decorator_8h.html" title="Decorator that makes a tower go up one level." alt="" coords="531,153,668,178"/>
+<area shape="poly" id="edge54_Node000001_Node000027" title=" " alt="" coords="761,30,725,55,688,81,652,112,622,143,618,139,648,109,684,77,722,50,756,33"/>
+<area shape="rect" id="Node000028" href="$_slow_tower_8h.html" title="Tower that damages and slows a critter." alt="" coords="844,153,939,178"/>
+<area shape="poly" id="edge57_Node000001_Node000028" title=" " alt="" coords="791,29,876,141,870,140,789,34"/>
+<area shape="rect" id="Node000029" href="$_splash_decorator_8h.html" title="Decorator that damages the critters next to the target." alt="" coords="379,153,508,178"/>
+<area shape="poly" id="edge59_Node000001_Node000029" title=" " alt="" coords="750,33,487,148,484,144,755,30"/>
+<area shape="poly" id="edge19_Node000007_Node000006" title=" " alt="" coords="1132,250,1515,440,1509,440,1131,255"/>
+<area shape="rect" id="Node000008" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="1070,300,1136,326"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1108,250,1107,286,1103,283,1105,254"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="1072,324,673,447,672,441,1067,324"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="1115,324,1160,372,1216,437,1211,435,1156,375,1113,328"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="1137,322,1509,445,1504,445,1136,328"/>
+<area shape="rect" id="Node000009" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="1626,374,1724,399"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="1137,316,1613,377,1608,377,1137,321"/>
+<area shape="poly" id="edge15_Node000008_Node000012" title=" " alt="" coords="1101,324,1090,361,1086,357,1097,328"/>
+<area shape="poly" id="edge13_Node000009_Node000006" title=" " alt="" coords="1657,399,1585,442,1584,437,1651,401"/>
+<area shape="rect" id="Node000010" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="1725,447,1810,473"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="1692,397,1743,439,1738,437,1690,402"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1626,447,1700,473"/>
+<area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="1675,398,1670,434,1666,430,1671,401"/>
+<area shape="poly" id="edge16_Node000012_Node000004" title=" " alt="" coords="1015,398,673,454,672,448,1010,398"/>
+<area shape="poly" id="edge17_Node000012_Node000005" title=" " alt="" coords="1106,397,1197,441,1191,440,1105,402"/>
+<area shape="poly" id="edge18_Node000012_Node000006" title=" " alt="" coords="1146,395,1509,452,1504,452,1146,401"/>
+<area shape="rect" id="Node000014" href="$_effect_decorator_8h.html" title="Base class of the decorators that add a special effect to a tower&#39;s hits." alt="" coords="232,153,356,178"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="302,102,300,138,295,136,300,107"/>
+<area shape="rect" id="Node000015" href="$_tower_decorator_8h.html" title="Decorator pattern: base class of the decorators that change a Tower." alt="" coords="511,226,634,252"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="341,176,513,221,508,223,341,182"/>
+<area shape="poly" id="edge23_Node000015_Node000004" title=" " alt="" coords="576,250,589,315,607,399,617,434,612,431,602,400,584,316,573,255"/>
+<area shape="poly" id="edge24_Node000015_Node000008" title=" " alt="" coords="635,246,1057,304,1052,306,635,251"/>
+<area shape="poly" id="edge26_Node000016_Node000005" title=" " alt="" coords="1534,326,1276,443,1274,438,1528,327"/>
+<area shape="poly" id="edge27_Node000016_Node000009" title=" " alt="" coords="1579,324,1645,366,1640,365,1577,329"/>
+<area shape="poly" id="edge29_Node000017_Node000005" title=" " alt="" coords="1405,251,1366,319,1337,361,1305,401,1263,440,1261,435,1301,398,1333,358,1361,316,1400,254"/>
+<area shape="poly" id="edge30_Node000017_Node000016" title=" " alt="" coords="1434,250,1522,293,1516,293,1434,255"/>
+<area shape="poly" id="edge32_Node000018_Node000008" title=" " alt="" coords="924,250,1058,296,1053,296,924,255"/>
+<area shape="poly" id="edge34_Node000019_Node000014" title=" " alt="" coords="447,107,341,149,339,144,451,104"/>
+<area shape="poly" id="edge36_Node000020_Node000004" title=" " alt="" coords="1372,100,1061,162,895,199,835,215,802,229,773,250,745,276,698,333,662,389,637,435,634,431,657,386,694,330,741,272,769,246,799,224,834,210,894,194,1060,156,1377,99"/>
+<area shape="poly" id="edge37_Node000020_Node000005" title=" " alt="" coords="1377,101,1332,122,1311,137,1293,154,1273,188,1257,225,1246,264,1239,303,1233,376,1234,433,1230,430,1228,376,1233,302,1241,263,1252,223,1268,186,1289,151,1307,132,1329,118,1372,102"/>
+<area shape="poly" id="edge39_Node000020_Node000006" title=" " alt="" coords="1443,101,1485,118,1532,144,1575,179,1592,201,1606,225,1614,254,1617,283,1614,312,1608,341,1589,394,1567,436,1564,432,1584,392,1603,340,1609,312,1611,283,1609,255,1601,227,1588,204,1571,183,1529,148,1483,123,1442,106"/>
+<area shape="poly" id="edge45_Node000020_Node000008" title=" " alt="" coords="1377,98,1312,119,1279,134,1249,155,1229,178,1220,202,1210,227,1192,254,1167,276,1140,294,1138,289,1164,272,1188,250,1206,224,1215,200,1225,175,1246,151,1277,130,1311,114,1372,99"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1434,153,1487,178"/>
+<area shape="poly" id="edge38_Node000020_Node000021" title=" " alt="" coords="1418,102,1445,141,1440,139,1416,107"/>
+<area shape="rect" id="Node000022" href="$_map_8h.html" title="The game map: a grid of cells with one entry and one exit." alt="" coords="1731,300,1788,326"/>
+<area shape="poly" id="edge40_Node000020_Node000022" title=" " alt="" coords="1443,101,1595,150,1651,182,1700,224,1726,255,1747,288,1742,286,1722,258,1696,228,1648,186,1593,155,1443,106"/>
+<area shape="poly" id="edge44_Node000020_Node000024" title=" " alt="" coords="1443,99,1651,152,1646,152,1443,104"/>
+<area shape="rect" id="Node000025" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="1488,226,1591,252"/>
+<area shape="poly" id="edge46_Node000020_Node000025" title=" " alt="" coords="1435,103,1469,123,1501,151,1521,181,1534,213,1529,211,1516,183,1497,154,1466,127,1434,108"/>
+<area shape="poly" id="edge50_Node000020_Node000026" title=" " alt="" coords="1402,103,1376,142,1373,138,1398,106"/>
+<area shape="poly" id="edge41_Node000022_Node000006" title=" " alt="" coords="1762,324,1758,362,1751,383,1739,401,1714,417,1677,431,1594,453,1593,447,1675,426,1712,412,1735,397,1746,381,1753,361,1758,328"/>
+<area shape="poly" id="edge43_Node000022_Node000009" title=" " alt="" coords="1748,325,1702,366,1700,361,1743,327"/>
+<area shape="rect" id="Node000023" href="$_cell_8h.html" title="One square of the game map and its possible types." alt="" coords="1800,374,1855,399"/>
+<area shape="poly" id="edge42_Node000022_Node000023" title=" " alt="" coords="1772,323,1808,363,1803,362,1770,328"/>
+<area shape="poly" id="edge47_Node000025_Node000006" title=" " alt="" coords="1534,251,1524,275,1515,301,1513,336,1518,372,1539,435,1535,432,1513,373,1507,336,1510,299,1519,273,1530,254"/>
+<area shape="poly" id="edge49_Node000025_Node000009" title=" " alt="" coords="1554,250,1605,298,1659,362,1654,360,1601,302,1552,255"/>
+<area shape="poly" id="edge48_Node000025_Node000016" title=" " alt="" coords="1544,250,1553,286,1549,284,1541,254"/>
+<area shape="poly" id="edge51_Node000026_Node000005" title=" " alt="" coords="1354,177,1247,435,1243,431,1349,180"/>
+<area shape="poly" id="edge52_Node000026_Node000017" title=" " alt="" coords="1366,176,1393,215,1388,213,1364,181"/>
+<area shape="poly" id="edge53_Node000026_Node000025" title=" " alt="" coords="1388,176,1497,220,1492,220,1387,182"/>
+<area shape="poly" id="edge55_Node000027_Node000015" title=" " alt="" coords="597,177,585,213,580,210,593,180"/>
+<area shape="poly" id="edge58_Node000028_Node000008" title=" " alt="" coords="910,176,1076,291,1071,291,908,181"/>
+<area shape="poly" id="edge60_Node000029_Node000015" title=" " alt="" coords="465,176,540,218,535,219,465,182"/>
+</map>

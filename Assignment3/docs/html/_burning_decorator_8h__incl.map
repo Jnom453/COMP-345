@@ -1,0 +1,28 @@
+<map id="BurningDecorator.h" name="BurningDecorator.h">
+<area shape="rect" id="Node000001" title="Decorator that sets the hit critter on fire." alt="" coords="5,5,138,31"/>
+<area shape="rect" id="Node000002" href="$_effect_decorator_8h.html" title="Base class of the decorators that add a special effect to a tower&#39;s hits." alt="" coords="10,79,133,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,29,74,63,69,63,71,34"/>
+<area shape="rect" id="Node000003" href="$_tower_decorator_8h.html" title="Decorator pattern: base class of the decorators that change a Tower." alt="" coords="10,153,133,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,102,74,137,69,137,71,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="11,374,79,399"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="72,178,53,300,48,358,43,357,48,300,67,180"/>
+<area shape="rect" id="Node000005" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="168,226,234,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="93,176,168,217,163,220,94,182"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="165,249,118,268,93,283,72,302,57,329,50,359,45,357,52,327,68,298,90,279,116,263,169,246"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="158,374,212,399"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="210,250,228,285,232,306,230,326,221,346,208,364,205,360,216,343,225,325,227,306,223,286,208,255"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="272,374,330,399"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="212,250,250,298,289,361,284,360,245,302,210,255"/>
+<area shape="rect" id="Node000008" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="341,300,439,326"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="233,250,346,293,341,295,233,255"/>
+<area shape="rect" id="Node000011" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="83,300,215,326"/>
+<area shape="poly" id="edge12_Node000005_Node000011" title=" " alt="" coords="194,250,169,289,165,285,190,254"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="378,325,329,366,327,361,372,327"/>
+<area shape="rect" id="Node000009" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="452,374,536,399"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="409,324,467,365,461,364,407,329"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="353,374,427,399"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="392,324,392,359,388,356,388,328"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="134,326,76,367,73,362,129,327"/>
+<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="156,324,175,360,169,359,153,328"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="175,324,264,366,259,367,174,329"/>
+</map>

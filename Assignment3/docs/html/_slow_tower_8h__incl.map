@@ -1,0 +1,23 @@
+<map id="SlowTower.h" name="SlowTower.h">
+<area shape="rect" id="Node000001" title="Tower that damages and slows a critter." alt="" coords="129,5,224,31"/>
+<area shape="rect" id="Node000002" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="144,79,210,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,29,179,64,174,62,176,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,226,74,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,107,123,127,91,154,69,184,53,214,48,211,65,181,87,151,119,123,155,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="116,226,169,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="148,107,123,127,110,139,101,154,97,169,101,184,120,215,115,215,96,187,92,169,96,152,106,136,120,123,152,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="250,226,307,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="200,103,231,123,258,151,271,181,278,212,273,210,266,182,253,154,228,127,200,108"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="318,153,417,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="209,103,323,146,318,148,209,108"/>
+<area shape="rect" id="Node000009" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="111,153,243,178"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="178,103,179,138,174,136,175,107"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="355,178,306,219,304,214,350,180"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="429,226,514,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="386,176,444,218,439,217,384,181"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="330,226,405,252"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="369,177,370,212,365,209,366,180"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="155,181,78,221,75,216,152,177"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="173,177,157,214,153,210,169,180"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="195,176,251,217,246,217,193,181"/>
+</map>

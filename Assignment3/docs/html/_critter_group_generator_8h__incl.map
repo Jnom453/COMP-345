@@ -1,0 +1,19 @@
+<map id="CritterGroupGenerator.h" name="CritterGroupGenerator.h">
+<area shape="rect" id="Node000001" title="Creates the critters of each wave." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="33,79,137,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,29,88,63,82,63,85,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="10,300,67,326"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,108,57,128,42,154,33,188,30,223,35,285,30,285,25,223,27,187,37,152,53,125,74,103"/>
+<area shape="rect" id="Node000004" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="51,153,119,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="86,102,88,137,82,136,84,107"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="118,226,217,252"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="96,103,133,151,161,212,155,212,128,154,95,108"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="41,226,94,252"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="83,176,77,212,72,210,81,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="99,176,145,215,140,217,99,182"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="148,254,75,294,72,290,144,251"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="108,300,192,326"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="167,251,159,287,155,283,163,254"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="217,300,292,326"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="183,250,231,290,226,290,181,255"/>
+</map>

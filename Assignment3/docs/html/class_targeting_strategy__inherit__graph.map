@@ -1,0 +1,11 @@
+<map id="TargetingStrategy" name="TargetingStrategy">
+<area shape="rect" id="Node000001" title="Strategy interface: chooses one target among the critters in range." alt="" coords="288,5,412,31"/>
+<area shape="rect" id="Node000002" href="$class_nearest_to_exit_strategy.html" title="Strategy: the critter closest to the exit, meaning the furthest along the path." alt="" coords="5,79,159,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,38,128,81,127,76,289,33"/>
+<area shape="rect" id="Node000003" href="$class_nearest_to_tower_strategy.html" title="Strategy: the critter closest to the tower." alt="" coords="183,79,349,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="327,40,281,81,279,76,322,42"/>
+<area shape="rect" id="Node000004" href="$class_strongest_strategy.html" title="Strategy: the strongest critter, meaning the one with the most hit points left." alt="" coords="372,79,498,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="377,39,424,79,418,78,375,44"/>
+<area shape="rect" id="Node000005" href="$class_weakest_strategy.html" title="Strategy: the weakest critter, meaning the one with the fewest hit points left." alt="" coords="523,79,644,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="404,33,546,78,541,79,404,39"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="WaveFactory.cpp" name="WaveFactory.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,140,31"/>
+<area shape="rect" id="Node000002" href="$_wave_factory_8h.html" title="Builds the waves of critters, choosing the kinds from the progress of the game." alt="" coords="26,79,133,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,29,82,63,77,63,79,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,300,80,326"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,108,35,127,15,154,8,188,13,224,25,257,39,286,34,287,20,260,8,225,3,188,10,152,31,123,59,103"/>
+<area shape="rect" id="Node000004" href="$_critter_factory_8h.html" title="Factory pattern: creates critters of one kind." alt="" coords="24,153,135,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="80,102,82,137,77,137,79,108"/>
+<area shape="rect" id="Node000010" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="159,153,262,178"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="101,103,177,144,173,146,102,108"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="79,177,60,285,55,284,76,181"/>
+<area shape="rect" id="Node000005" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="90,226,157,252"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="87,176,111,212,105,213,87,181"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="110,254,77,291,73,287,113,250"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="106,300,205,326"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="130,250,147,286,141,286,128,255"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="9,374,94,399"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="140,326,83,367,80,362,135,327"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="216,374,274,399"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="172,324,221,364,215,364,170,329"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="118,374,193,399"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="157,324,158,359,153,357,154,328"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="194,181,151,218,148,214,197,177"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="208,177,168,287,163,284,204,180"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="214,177,243,359,238,358,210,180"/>
+</map>

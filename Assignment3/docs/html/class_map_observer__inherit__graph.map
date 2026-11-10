@@ -1,0 +1,5 @@
+<map id="MapObserver" name="MapObserver">
+<area shape="rect" id="Node000001" title="Window that displays a Map and redraws it when the map changes." alt="" coords="5,79,105,105"/>
+<area shape="rect" id="Node000002" href="$class_observer.html" title="Interface for objects that want to be told when an Observable changes." alt="" coords="18,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,45,58,79,52,78,53,48"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FreezingDecorator" name="FreezingDecorator">
+<area shape="rect" id="Node000001" title="Freezing effect: a hit also slows the critter down for a short time." alt="" coords="5,300,134,326"/>
+<area shape="rect" id="Node000002" href="$class_effect_decorator.html" title="A decorator that applies an extra effect to every critter its tower hits." alt="" coords="13,226,126,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,266,72,300,67,299,68,269"/>
+<area shape="rect" id="Node000003" href="$class_tower_decorator.html" title="A Tower that wraps another Tower and forwards everything to it." alt="" coords="13,153,126,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,191,72,226,67,225,69,196"/>
+<area shape="rect" id="Node000004" href="$class_tower.html" title="Base class of every tower in the game." alt="" coords="41,79,98,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="70,118,72,153,67,152,69,123"/>
+<area shape="rect" id="Node000005" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="26,5,113,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="70,44,72,79,67,78,69,49"/>
+</map>

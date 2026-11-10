@@ -1,0 +1,29 @@
+<map id="DirectDamageTower.cpp" name="DirectDamageTower.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,5,314,31"/>
+<area shape="rect" id="Node000002" href="$_direct_damage_tower_8h.html" title="Tower that damages a single critter." alt="" coords="100,79,251,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,33,196,68,192,65,224,29"/>
+<area shape="rect" id="Node000011" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="280,153,348,178"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="239,29,302,139,297,139,237,34"/>
+<area shape="rect" id="Node000003" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="137,153,203,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,102,175,138,170,136,173,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,300,74,326"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,181,106,200,74,228,57,256,47,286,42,284,52,254,69,225,103,196,141,177"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="133,300,186,326"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="136,181,108,200,94,213,83,227,80,245,88,261,103,276,123,292,117,292,99,281,83,264,75,245,78,225,90,209,105,196,140,177"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="235,300,292,326"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="189,176,216,197,240,225,254,255,262,286,257,284,249,256,236,228,213,201,189,181"/>
+<area shape="rect" id="Node000007" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="352,226,450,252"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="204,175,349,220,345,223,203,180"/>
+<area shape="rect" id="Node000010" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="93,226,226,252"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="170,176,166,212,161,210,167,181"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="380,252,301,295,299,290,375,253"/>
+<area shape="rect" id="Node000008" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="439,300,523,326"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="415,250,459,290,454,289,413,255"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="340,300,414,326"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="399,251,387,287,384,283,395,254"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="142,254,74,294,72,289,137,252"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="161,250,162,285,157,283,158,254"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="178,250,236,291,231,291,176,255"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="307,177,278,214,240,254,191,293,188,289,236,250,274,211,303,180"/>
+<area shape="poly" id="edge16_Node000011_Node000007" title=" " alt="" coords="330,176,377,217,372,216,328,181"/>
+</map>

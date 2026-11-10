@@ -1,0 +1,125 @@
+/**
+@mainpage Tower Defense (COMP 345 - Assignment 3)
+
+@section team Team
+Jana Alnoman, Chloe Fokom, Emine Nisa Mahmutogullari, Adila Burga (COMP 345).
+
+@section overview Overview
+A tower defense game in C++. Critters enter the map at one point and walk a
+path to the exit. The player spends coins on towers placed on the scenery
+around the path to kill the critters before they escape. Assignment 3 adds
+three design patterns, all used by the playable game: Strategy (how towers
+choose a target), Factory (the critters of each wave) and Decorator (tower
+upgrades and effects). The Observer pattern of Assignment 2 is also kept.
+
+@section rules Game rules
+
+@subsection rules_map Map
+- The map is a grid of cells: scenery (towers can be placed), path, one entry
+  and one exit. A map is valid only if the path links the entry to the exit
+  (Map::isValid()).
+
+@subsection rules_towers Towers
+- Towers are bought with coins and placed on scenery cells only.
+- DirectDamageTower hits one critter, AreaDamageTower hits every critter in
+  range, SlowTower hits one critter and halves its speed.
+- A tower can be leveled up to level 3. The next level costs the buying cost
+  times the current level; each level adds 5 power and 1.0 range, and the
+  sell refund grows by half of the price paid (LevelUpDecorator).
+- A tower can also get the effects Splash, Burning and Freezing, one of each,
+  for a price (SplashDecorator, BurningDecorator, FreezingDecorator).
+- Each tower has a targeting strategy that decides which critter in range it
+  hits (TargetingStrategy). The default is nearest to the exit.
+
+@subsection rules_critters Critters and waves
+- A critter has a level, hit points, strength, speed, reward and a kind
+  (Critter).
+- A killed critter gives its reward in coins. A critter that reaches the exit
+  costs one life and coins equal to its strength.
+- Burning (Critter::ignite()) deals damage every second for a few seconds.
+  Freezing (Critter::freeze()) halves the speed for a few seconds.
+- Wave n has 3 + n critters. Which kinds appear depends on the number of waves
+  already destroyed (WaveFactory).
+
+@subsection rules_player Player
+- The player starts with 350 coins and 10 lives and wins by destroying 10
+  waves. Coins are spent on towers, level ups and effects, earned by kills,
+  and lost to critters that reach the exit. The balance never goes below 0.
+
+@section strategy Strategy pattern: choosing a target
+TargetingStrategy is the abstract strategy. A Tower owns one strategy object
+and calls Tower::chooseTarget() with the critters in range (as a list of
+TargetCandidate, which includes the distance to the tower). Four concrete
+strategies decide which one to hit:
+| Strategy | Chooses |
+|----------|---------|
+| NearestToTowerStrategy | the smallest distance to the tower |
+| NearestToExitStrategy | the critter that is furthest along the path |
+| StrongestStrategy | the most hit points |
+| WeakestStrategy | the fewest hit points |
+
+The strategy can be replaced at any time with Tower::setStrategy() (the player
+presses T in the game). Tower does not need to know how the choice is made, and
+a new strategy only needs a new subclass.
+
+@section factory Factory pattern: creating waves
+CritterFactory is the abstract factory with the method
+CritterFactory::createCritter(). It has four subclasses, each creating one
+kind of critter with its own characteristics:
+NormalCritterFactory, FastCritterFactory, TankCritterFactory and
+BossCritterFactory. WaveFactory owns them and, in WaveFactory::createWave(),
+chooses a factory for each critter of the wave from the number of waves
+already destroyed:
+- Normal critters always;
+- Fast critters from wave 3 (every third critter);
+- Tank critters from wave 5 (every fourth critter);
+- a Boss at the end of the waves 8 and later.
+
+The critters also get stronger with the wave number. Game only calls
+WaveFactory::createWave(); it does not know the kinds.
+
+@section decorator Decorator pattern: upgrading towers
+TowerDecorator is a Tower that wraps another Tower (the "component") and
+forwards every virtual call to it. A subclass changes only what it needs, so
+decorators can be stacked in any order (for example a level up wrapped in
+Burning wrapped in Splash).
+| Decorator | Effect |
+|-----------|--------|
+| LevelUpDecorator | level +1, power +5, range +1, higher refund; adds the extra power to each attack |
+| SplashDecorator | critters near the target take half the damage; refund +half of the price |
+| BurningDecorator | the target burns (a quarter of the power each second for 3 s) |
+| FreezingDecorator | the target moves at half speed for 2 s |
+EffectDecorator is the common base of the two effects that act on the hit
+critters (burning and freezing). Because every getter of Tower is virtual, the
+cost of the next level (Tower::getUpgradeCost()), the sell refund, the range
+and the power always come from the outermost decorator. Game keeps each tower
+as a std::unique_ptr<Tower> and replaces it by the decorated tower when the
+player upgrades it.
+
+@section observer Observer design pattern (Assignment 2)
+Map, Tower, Critter and CritterGroup inherit from Observable. Views inherit
+from Observer and register with Observable::attach(); when the subject changes
+it calls notifyObservers(), which marks the view as out of date so the SFML
+window redraws itself on its next frame. The four views are MapObserver,
+TowerObserver, CritterObserver and CritterGroupObserver (demonstration in
+main.cpp).
+
+@section playable The playable game
+Game holds the rules (placing, leveling up, adding effects, selling towers,
+waves, shooting, coins and lives) and has no graphics. game_main.cpp draws it in
+one SFML window and turns mouse clicks and key presses into calls on Game.
+The controls are listed in the README and in game_main.cpp.
+
+@section tests Test cases
+Tests_A3.cpp is a console program with checks for the strategies, the
+factories, the decorators (alone and stacked) and the Game that uses them.
+
+@section scope Scope of this build
+Not implemented: a map editor, a choice between several maps (the game uses
+one built-in map) and saving or loading maps.
+
+@section build Building and generating this documentation
+See README.md for build and run instructions. To regenerate this
+documentation, run `doxygen Doxyfile` in this folder and open
+`docs/html/index.html`.
+*/

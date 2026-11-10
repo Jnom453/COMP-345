@@ -1,0 +1,34 @@
+<map id="FreezingDecorator.cpp" name="FreezingDecorator.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,5,373,31"/>
+<area shape="rect" id="Node000002" href="$_freezing_decorator_8h.html" title="Decorator that freezes the hit critter." alt="" coords="174,79,313,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,33,264,68,260,65,290,29"/>
+<area shape="rect" id="Node000013" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="316,300,384,326"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="304,29,327,78,340,135,347,192,353,286,348,284,342,193,335,136,322,80,303,34"/>
+<area shape="rect" id="Node000003" href="$_effect_decorator_8h.html" title="Base class of the decorators that add a special effect to a tower&#39;s hits." alt="" coords="182,153,305,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,102,246,138,241,136,243,107"/>
+<area shape="rect" id="Node000004" href="$_tower_decorator_8h.html" title="Decorator pattern: base class of the decorators that change a Tower." alt="" coords="182,226,305,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,176,246,211,241,210,242,181"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,447,74,473"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,254,170,273,124,298,81,332,63,353,47,375,38,403,38,432,33,431,33,402,42,373,58,349,77,329,121,294,167,268,211,251"/>
+<area shape="rect" id="Node000006" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="213,300,279,326"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="245,250,248,286,243,284,243,255"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="210,317,178,324,139,334,100,350,67,375,51,403,44,433,39,431,46,401,63,372,98,346,137,329,177,318,215,315"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="202,447,256,473"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="247,325,234,433,230,431,243,327"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="280,447,338,473"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="253,324,300,433,295,432,250,328"/>
+<area shape="rect" id="Node000009" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="386,374,485,399"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="279,324,392,367,387,368,278,329"/>
+<area shape="rect" id="Node000012" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="77,374,210,399"/>
+<area shape="poly" id="edge13_Node000006_Node000012" title=" " alt="" coords="231,325,175,367,172,362,227,328"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="417,399,344,442,343,437,411,401"/>
+<area shape="rect" id="Node000010" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="383,447,467,473"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="436,398,431,434,427,430,432,401"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="492,447,566,473"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="452,397,504,438,499,437,450,402"/>
+<area shape="poly" id="edge14_Node000012_Node000005" title=" " alt="" coords="129,400,71,441,68,436,123,400"/>
+<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="159,397,206,437,200,438,157,402"/>
+<area shape="poly" id="edge16_Node000012_Node000008" title=" " alt="" coords="172,397,269,440,264,442,171,402"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="343,325,250,437,247,433,338,327"/>
+<area shape="poly" id="edge19_Node000013_Node000009" title=" " alt="" coords="365,324,412,364,407,364,364,329"/>
+</map>

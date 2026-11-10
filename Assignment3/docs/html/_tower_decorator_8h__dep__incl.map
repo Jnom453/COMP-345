@@ -1,0 +1,35 @@
+<map id="TowerDecorator.h" name="TowerDecorator.h">
+<area shape="rect" id="Node000001" title="Decorator pattern: base class of the decorators that change a Tower." alt="" coords="576,5,699,31"/>
+<area shape="rect" id="Node000002" href="$_effect_decorator_8h.html" title="Base class of the decorators that add a special effect to a tower&#39;s hits." alt="" coords="314,79,438,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="576,36,422,81,420,76,581,34"/>
+<area shape="rect" id="Node000010" href="$_level_up_decorator_8h.html" title="Decorator that makes a tower go up one level." alt="" coords="700,153,836,178"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="651,42,669,73,691,103,721,129,751,153,745,151,717,134,688,106,665,76,649,47"/>
+<area shape="rect" id="Node000012" href="$_splash_decorator_8h.html" title="Decorator that damages the critters next to the target." alt="" coords="548,153,676,178"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="635,44,616,154,612,151,631,48"/>
+<area shape="rect" id="Node000014" href="$_tower_decorator_8cpp.html" title=" " alt="" coords="701,79,838,105"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="673,36,750,79,744,78,672,41"/>
+<area shape="rect" id="Node000003" href="$_burning_decorator_8h.html" title="Decorator that sets the hit critter on fire." alt="" coords="230,153,362,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,114,311,155,308,150,349,116"/>
+<area shape="rect" id="Node000007" href="$_effect_decorator_8cpp.html" title=" " alt="" coords="386,153,524,178"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="401,113,444,153,439,152,400,118"/>
+<area shape="rect" id="Node000008" href="$_freezing_decorator_8h.html" title="Decorator that freezes the hit critter." alt="" coords="67,153,205,178"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="319,111,178,155,176,150,323,108"/>
+<area shape="rect" id="Node000004" href="$_burning_decorator_8cpp.html" title=" " alt="" coords="182,226,328,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="284,190,263,228,260,224,279,193"/>
+<area shape="rect" id="Node000005" href="$_game_8cpp.html" title=" " alt="" coords="352,226,433,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="325,185,379,226,373,226,324,190"/>
+<area shape="rect" id="Node000006" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="458,226,559,252"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="347,181,475,226,469,226,346,186"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="194,180,353,225,349,228,193,185"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="215,179,459,226,455,230,214,184"/>
+<area shape="rect" id="Node000009" href="$_freezing_decorator_8cpp.html" title=" " alt="" coords="5,226,158,252"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="121,189,93,228,89,224,116,191"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="687,181,446,229,434,231,433,226,445,224,682,182"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="712,183,553,228,552,223,707,183"/>
+<area shape="rect" id="Node000011" href="$_level_up_decorator_8cpp.html" title=" " alt="" coords="749,226,899,252"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="788,188,817,227,812,225,786,193"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="563,183,430,228,429,223,558,184"/>
+<area shape="poly" id="edge18_Node000012_Node000006" title=" " alt="" coords="585,187,527,228,525,223,580,188"/>
+<area shape="rect" id="Node000013" href="$_splash_decorator_8cpp.html" title=" " alt="" coords="582,226,725,252"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="628,189,649,227,644,225,625,194"/>
+</map>

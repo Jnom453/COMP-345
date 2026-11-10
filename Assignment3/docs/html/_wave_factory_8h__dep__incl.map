@@ -1,0 +1,14 @@
+<map id="WaveFactory.h" name="WaveFactory.h">
+<area shape="rect" id="Node000001" title="Builds the waves of critters, choosing the kinds from the progress of the game." alt="" coords="230,5,337,31"/>
+<area shape="rect" id="Node000002" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="164,79,232,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,40,214,81,211,76,255,42"/>
+<area shape="rect" id="Node000004" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="249,153,350,178"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="288,44,300,153,296,151,284,48"/>
+<area shape="rect" id="Node000006" href="$_wave_factory_8cpp.html" title=" " alt="" coords="321,79,443,105"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="313,38,368,79,363,79,312,43"/>
+<area shape="rect" id="Node000003" href="$_game_8cpp.html" title=" " alt="" coords="5,153,87,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,114,73,154,71,150,157,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="229,111,285,152,279,152,227,117"/>
+<area shape="rect" id="Node000005" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="111,153,224,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="189,117,174,154,171,150,185,120"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TowerObserver" name="TowerObserver">
+<area shape="rect" id="Node000001" title="Window that displays a tower&#39;s characteristics and redraws them when the tower changes." alt="" coords="5,79,115,105"/>
+<area shape="rect" id="Node000002" href="$class_observer.html" title="Interface for objects that want to be told when an Observable changes." alt="" coords="23,5,97,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,45,63,79,57,78,58,48"/>
+</map>

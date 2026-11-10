@@ -1,0 +1,9 @@
+<map id="FreezingDecorator.h" name="FreezingDecorator.h">
+<area shape="rect" id="Node000001" title="Decorator that freezes the hit critter." alt="" coords="154,5,292,31"/>
+<area shape="rect" id="Node000002" href="$_freezing_decorator_8cpp.html" title=" " alt="" coords="5,79,158,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,39,107,81,104,76,183,38"/>
+<area shape="rect" id="Node000003" href="$_game_8cpp.html" title=" " alt="" coords="182,79,264,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,45,225,80,221,77,221,48"/>
+<area shape="rect" id="Node000004" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="288,79,390,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,37,322,78,316,78,254,42"/>
+</map>

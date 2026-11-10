@@ -1,0 +1,24 @@
+<map id="TowerDecorator.h" name="TowerDecorator.h">
+<area shape="rect" id="Node000001" title="Decorator pattern: base class of the decorators that change a Tower." alt="" coords="5,5,129,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="6,226,74,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,31,48,153,44,211,39,210,43,152,62,32"/>
+<area shape="rect" id="Node000003" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="163,79,230,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,29,163,70,159,72,89,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="161,102,114,121,89,136,68,154,52,182,45,212,40,210,47,180,64,151,86,131,111,116,165,98"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="154,226,207,252"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="206,103,224,137,228,158,226,179,216,199,204,216,201,212,212,196,220,178,223,158,219,139,204,108"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="268,226,325,252"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="207,103,245,151,284,214,279,213,241,154,205,108"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="336,153,435,178"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="229,103,342,146,337,148,228,108"/>
+<area shape="rect" id="Node000009" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="78,153,210,178"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="190,103,164,142,160,138,186,107"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="373,178,324,219,322,214,368,180"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="448,226,532,252"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="404,176,462,218,457,217,403,181"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="348,226,423,252"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="388,177,388,212,384,209,384,180"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="129,179,72,220,69,215,124,179"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="152,176,170,213,165,212,149,181"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="171,176,259,219,254,220,170,181"/>
+</map>
