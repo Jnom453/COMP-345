@@ -1,0 +1,16 @@
+<map id="WaveFactory" name="WaveFactory">
+<area shape="rect" id="Node000001" title="Creates each wave of critters using the critter factories." alt="" coords="264,177,362,203"/>
+<area shape="rect" id="Node000002" href="$class_normal_critter_factory.html" title="Builds the standard critter." alt="" coords="5,80,149,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,113,132,133,163,151,214,168,266,182,261,182,213,173,161,155,129,138,102,119"/>
+<area shape="rect" id="Node000003" href="$class_critter_factory.html" title="Abstract factory that creates critters of one kind for a given wave." alt="" coords="232,5,333,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,39,113,82,110,77,235,34"/>
+<area shape="rect" id="Node000004" href="$class_fast_critter_factory.html" title="Builds a fast critter: few hit points but quick." alt="" coords="173,80,301,106"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="269,43,246,82,242,78,265,46"/>
+<area shape="rect" id="Node000005" href="$class_tank_critter_factory.html" title="Builds a tank critter: slow, with many hit points." alt="" coords="324,80,454,106"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="313,37,374,80,369,80,312,42"/>
+<area shape="rect" id="Node000006" href="$class_boss_critter_factory.html" title="Builds a boss critter: very strong, steals a lot, pays a lot." alt="" coords="478,80,609,106"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="341,33,502,79,497,80,340,38"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,117,276,151,300,177,295,176,272,155,249,122"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="375,118,350,155,327,179,324,174,346,151,370,121"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="517,114,484,137,447,155,405,171,363,181,362,176,403,165,445,151,481,133,512,116"/>
+</map>

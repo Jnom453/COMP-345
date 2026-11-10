@@ -1,0 +1,21 @@
+<map id="TargetingStrategy.cpp" name="TargetingStrategy.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="100,5,246,31"/>
+<area shape="rect" id="Node000002" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="45,79,178,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,33,134,69,130,65,164,29"/>
+<area shape="rect" id="Node000006" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="202,79,269,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="184,29,217,67,212,67,183,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,74,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,107,65,143,61,140,101,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,153,202,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="123,102,157,141,152,141,121,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="118,226,175,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="116,103,142,211,137,211,112,107"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="228,103,197,143,194,139,223,107"/>
+<area shape="rect" id="Node000007" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="226,153,325,178"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="243,102,264,140,259,139,241,107"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="256,178,183,221,181,216,251,179"/>
+<area shape="rect" id="Node000008" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="216,226,300,252"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="275,177,267,213,263,210,271,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="325,226,399,252"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="291,176,339,217,333,216,289,181"/>
+</map>

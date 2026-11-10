@@ -1,0 +1,5 @@
+<map id="NormalCritterFactory" name="NormalCritterFactory">
+<area shape="rect" id="Node000001" title="Builds the standard critter." alt="" coords="5,79,149,105"/>
+<area shape="rect" id="Node000002" href="$class_critter_factory.html" title="Abstract factory that creates critters of one kind for a given wave." alt="" coords="26,5,128,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,45,80,79,74,78,75,48"/>
+</map>

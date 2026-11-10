@@ -1,0 +1,30 @@
+<map id="Tower.cpp" name="Tower.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,282,31"/>
+<area shape="rect" id="Node000002" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="164,79,230,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,29,215,68,211,64,233,33"/>
+<area shape="rect" id="Node000009" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="24,153,156,178"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="217,33,187,54,153,81,128,111,107,141,103,138,123,107,150,77,184,50,221,30"/>
+<area shape="rect" id="Node000010" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="259,79,327,105"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="251,29,278,66,273,66,250,34"/>
+<area shape="rect" id="Node000011" href="$_player_8h.html" title="The player&#39;s coins." alt="" coords="351,79,419,105"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="267,29,350,71,344,72,266,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="9,226,78,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,94,126,99,85,108,45,126,28,138,14,154,9,168,10,183,26,213,21,215,5,184,3,167,9,151,25,135,43,121,83,103,126,94,165,91"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,226,202,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,104,182,212,177,210,193,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="227,226,284,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="203,103,248,212,242,212,200,107"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="333,153,431,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="229,103,339,146,334,148,228,108"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="177,107,123,146,120,141,181,103"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="363,178,291,221,289,216,358,180"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="329,226,414,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="383,177,378,213,374,209,379,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="438,226,513,252"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="399,176,451,217,445,216,397,181"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="85,177,62,215,58,212,80,180"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="106,176,152,216,147,217,104,181"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="119,176,216,219,211,221,118,181"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="286,105,197,216,193,212,281,105"/>
+<area shape="poly" id="edge15_Node000010_Node000006" title=" " alt="" coords="309,103,358,143,353,143,307,108"/>
+</map>

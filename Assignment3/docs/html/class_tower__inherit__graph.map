@@ -1,0 +1,23 @@
+<map id="Tower" name="Tower">
+<area shape="rect" id="Node000001" title="Base class of every tower in the game." alt="" coords="271,79,328,105"/>
+<area shape="rect" id="Node000003" href="$class_area_damage_tower.html" title="Area of effect tower: a shot damages every critter in a group." alt="" coords="5,153,138,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,109,111,155,109,150,258,104"/>
+<area shape="rect" id="Node000004" href="$class_direct_damage_tower.html" title="The basic tower: each shot damages one critter." alt="" coords="161,153,302,178"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,114,245,154,241,150,276,118"/>
+<area shape="rect" id="Node000005" href="$class_slow_tower.html" title="Special effect tower: each shot damages a critter and halves its speed." alt="" coords="326,153,412,178"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="322,113,360,152,354,152,321,118"/>
+<area shape="rect" id="Node000006" href="$class_tower_decorator.html" title="A Tower that wraps another Tower and forwards everything to it." alt="" coords="436,153,550,178"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="342,106,463,151,457,153,342,112"/>
+<area shape="rect" id="Node000002" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="256,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,44,302,80,297,78,298,49"/>
+<area shape="rect" id="Node000007" href="$class_effect_decorator.html" title="A decorator that applies an extra effect to every critter its tower hits." alt="" coords="292,226,406,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="457,185,374,228,372,223,452,186"/>
+<area shape="rect" id="Node000010" href="$class_level_up_decorator.html" title="Raises the wrapped tower by one level." alt="" coords="430,226,556,252"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="495,192,495,227,491,224,491,196"/>
+<area shape="rect" id="Node000011" href="$class_splash_decorator.html" title="Splash effect: a hit also damages the critters near the target." alt="" coords="580,226,699,252"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="532,183,617,226,612,226,531,188"/>
+<area shape="rect" id="Node000008" href="$class_burning_decorator.html" title="Burning effect: the damage of a hit is re&#45;applied for a few seconds." alt="" coords="213,300,335,326"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="328,262,288,302,285,297,323,264"/>
+<area shape="rect" id="Node000009" href="$class_freezing_decorator.html" title="Freezing effect: a hit also slows the critter down for a short time." alt="" coords="359,300,488,326"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="373,260,414,300,408,299,371,265"/>
+</map>

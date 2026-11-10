@@ -1,0 +1,62 @@
+<map id="game_main.cpp" name="game_main.cpp">
+<area shape="rect" id="Node000001" title="The SFML window of the playable game." alt="" coords="172,5,286,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,34,87,75,83,71,198,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="930,374,984,399"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,20,497,36,771,64,901,83,1009,106,1051,119,1083,132,1104,147,1112,164,1112,241,1109,263,1100,284,1072,321,1036,349,999,370,997,365,1033,345,1069,317,1096,282,1104,262,1107,240,1107,165,1100,151,1081,137,1049,124,1007,111,900,88,770,69,497,41,287,25"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="46,153,183,178"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,29,224,67,217,87,206,106,183,130,157,147,153,143,180,125,202,103,212,85,219,66,227,34"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="436,79,503,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="270,29,423,75,418,78,270,34"/>
+<area shape="rect" id="Node000021" href="$_font_loader_8h.html" title="Loads a system font on macOS, Windows or Linux." alt="" coords="96,79,192,105"/>
+<area shape="poly" id="edge38_Node000001_Node000021" title=" " alt="" coords="213,34,172,71,167,67,216,29"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="503,93,709,112,822,129,868,139,902,150,933,164,957,178,976,197,994,225,1006,252,1011,275,1009,298,1001,327,992,346,980,364,977,359,988,343,996,325,1003,297,1005,275,1001,253,989,228,972,200,954,182,931,169,900,155,866,144,821,134,708,117,504,98"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="443,374,511,399"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="469,103,466,153,468,267,476,359,471,357,463,267,461,153,466,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="624,153,677,178"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="500,103,612,148,607,149,500,108"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="491,447,548,473"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="433,98,374,112,339,123,304,137,273,155,247,178,230,205,224,238,224,314,226,361,234,379,250,397,265,408,288,417,349,433,478,454,473,455,348,438,287,422,263,412,246,401,229,382,221,362,219,314,219,238,225,203,243,174,269,151,302,132,337,118,372,107,438,96"/>
+<area shape="rect" id="Node000009" href="$_map_8h.html" title="The game map: a grid of cells with one entry and one exit." alt="" coords="259,300,316,326"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="433,101,385,121,360,135,338,154,317,185,304,220,292,286,287,283,299,219,313,183,334,151,357,131,383,116,438,98"/>
+<area shape="rect" id="Node000014" href="$_player_8h.html" title="The player&#39;s coins." alt="" coords="532,153,601,178"/>
+<area shape="poly" id="edge16_Node000005_Node000014" title=" " alt="" coords="486,103,541,143,536,144,485,108"/>
+<area shape="rect" id="Node000015" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="488,226,554,252"/>
+<area shape="poly" id="edge17_Node000005_Node000015" title=" " alt="" coords="469,103,471,139,478,177,488,196,501,215,496,214,484,199,473,179,465,139,467,108"/>
+<area shape="rect" id="Node000017" href="$_critter_group_8h.html" title="A wave of critters." alt="" coords="719,226,822,252"/>
+<area shape="poly" id="edge26_Node000005_Node000017" title=" " alt="" coords="474,103,492,140,505,160,521,176,565,201,612,218,660,228,706,236,701,236,659,233,611,223,562,206,518,180,501,163,487,143,472,108"/>
+<area shape="rect" id="Node000019" href="$_wave_factory_8h.html" title="Builds the waves of critters, choosing the kinds from the progress of the game." alt="" coords="782,153,890,178"/>
+<area shape="poly" id="edge32_Node000005_Node000019" title=" " alt="" coords="503,97,769,150,765,152,503,102"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="300,323,338,359,388,397,433,422,479,444,474,443,431,426,385,402,335,363,298,328"/>
+<area shape="rect" id="Node000010" href="$_cell_8h.html" title="One square of the game map and its possible types." alt="" coords="260,374,316,399"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="289,324,290,359,285,357,286,328"/>
+<area shape="rect" id="Node000011" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="701,374,800,399"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="317,316,688,373,684,377,317,321"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="714,400,564,448,563,443,709,400"/>
+<area shape="rect" id="Node000012" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="747,447,831,473"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="758,397,778,435,773,432,756,402"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="648,447,722,473"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="742,398,708,438,705,433,737,401"/>
+<area shape="poly" id="edge19_Node000015_Node000003" title=" " alt="" coords="555,249,918,370,913,372,554,254"/>
+<area shape="poly" id="edge18_Node000015_Node000006" title=" " alt="" coords="512,251,497,275,484,301,478,330,477,360,473,357,473,329,479,299,492,272,508,254"/>
+<area shape="poly" id="edge20_Node000015_Node000008" title=" " alt="" coords="511,251,468,304,448,337,433,374,430,387,433,398,453,422,480,442,475,441,449,426,428,401,425,387,428,373,443,335,464,300,506,254"/>
+<area shape="poly" id="edge21_Node000015_Node000011" title=" " alt="" coords="549,250,640,298,687,330,728,364,722,363,684,334,637,302,548,255"/>
+<area shape="rect" id="Node000016" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="494,300,626,326"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="529,250,549,287,543,285,527,255"/>
+<area shape="poly" id="edge24_Node000016_Node000003" title=" " alt="" coords="627,323,918,377,913,378,626,329"/>
+<area shape="poly" id="edge23_Node000016_Node000006" title=" " alt="" coords="548,325,504,366,501,361,543,327"/>
+<area shape="poly" id="edge25_Node000016_Node000008" title=" " alt="" coords="559,325,529,434,525,431,554,327"/>
+<area shape="poly" id="edge27_Node000017_Node000008" title=" " alt="" coords="759,252,546,440,543,435,754,253"/>
+<area shape="poly" id="edge31_Node000017_Node000011" title=" " alt="" coords="771,251,756,360,752,357,767,254"/>
+<area shape="rect" id="Node000018" href="$_critter_8h.html" title="An enemy that walks the path from the entry to the exit." alt="" coords="853,300,920,326"/>
+<area shape="poly" id="edge28_Node000017_Node000018" title=" " alt="" coords="791,250,857,292,851,291,790,255"/>
+<area shape="poly" id="edge29_Node000018_Node000003" title=" " alt="" coords="899,323,937,363,932,362,897,328"/>
+<area shape="poly" id="edge30_Node000018_Node000011" title=" " alt="" coords="866,325,788,369,786,364,861,327"/>
+<area shape="poly" id="edge33_Node000019_Node000003" title=" " alt="" coords="890,174,934,192,954,207,970,225,983,259,985,295,979,330,970,361,966,357,974,329,979,295,978,260,966,228,951,210,932,197,890,179"/>
+<area shape="poly" id="edge37_Node000019_Node000017" title=" " alt="" coords="827,177,793,217,790,213,823,180"/>
+<area shape="rect" id="Node000020" href="$_critter_factory_8h.html" title="Factory pattern: creates critters of one kind." alt="" coords="846,226,956,252"/>
+<area shape="poly" id="edge34_Node000019_Node000020" title=" " alt="" coords="847,176,883,215,877,214,846,181"/>
+<area shape="poly" id="edge35_Node000020_Node000003" title=" " alt="" coords="909,250,934,299,953,360,948,358,929,301,907,255"/>
+<area shape="poly" id="edge36_Node000020_Node000018" title=" " alt="" coords="901,250,894,286,890,283,897,254"/>
+<area shape="poly" id="edge39_Node000021_Node000004" title=" " alt="" coords="138,107,128,139,123,137,140,102"/>
+</map>

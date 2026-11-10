@@ -1,0 +1,19 @@
+<map id="CritterFactory.h" name="CritterFactory.h">
+<area shape="rect" id="Node000001" title="Factory pattern: creates critters of one kind." alt="" coords="112,5,223,31"/>
+<area shape="rect" id="Node000002" href="$_critter_factory_8cpp.html" title=" " alt="" coords="5,79,130,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,43,86,80,83,76,140,38"/>
+<area shape="rect" id="Node000003" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="122,226,224,252"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,45,175,227,170,226,166,47"/>
+<area shape="rect" id="Node000004" href="$_wave_factory_8h.html" title="Builds the waves of critters, choosing the kinds from the progress of the game." alt="" coords="220,79,328,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,37,259,78,253,79,198,43"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="260,117,183,228,179,224,255,118"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="255,153,322,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="281,118,289,153,284,151,278,122"/>
+<area shape="rect" id="Node000008" href="$_wave_factory_8cpp.html" title=" " alt="" coords="347,153,468,178"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="311,110,387,152,382,152,310,115"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="259,186,194,228,191,223,254,187"/>
+<area shape="rect" id="Node000006" href="$_game_8cpp.html" title=" " alt="" coords="248,226,330,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="291,192,291,227,287,224,287,196"/>
+<area shape="rect" id="Node000007" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="354,226,467,252"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="323,184,392,226,387,226,322,189"/>
+</map>

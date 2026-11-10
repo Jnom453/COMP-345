@@ -1,0 +1,24 @@
+<map id="AreaDamageTower.h" name="AreaDamageTower.h">
+<area shape="rect" id="Node000001" title="Tower that damages several critters at once." alt="" coords="176,5,318,31"/>
+<area shape="rect" id="Node000002" href="$_tower_8h.html" title="Base class of all towers." alt="" coords="179,79,245,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,29,227,66,222,63,239,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,226,314,252"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="251,30,276,152,284,212,280,210,271,153,248,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="118,226,186,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,101,132,120,110,134,93,154,89,170,94,186,106,201,123,217,117,217,102,205,90,188,84,170,88,151,107,130,130,115,181,98"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,226,59,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="177,104,131,124,106,138,83,155,60,183,44,213,40,211,56,180,79,151,103,133,129,119,181,100"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="221,103,250,151,278,213,273,212,246,154,219,108"/>
+<area shape="rect" id="Node000006" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="362,153,460,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="246,103,365,146,360,148,245,108"/>
+<area shape="rect" id="Node000009" href="$_targeting_strategy_8h.html" title="Strategy pattern: the different ways a tower can choose its target." alt="" coords="103,153,236,178"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="207,103,186,141,182,137,203,107"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="392,178,321,221,319,216,387,180"/>
+<area shape="rect" id="Node000007" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="460,226,545,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="427,176,478,217,473,216,425,181"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="362,226,436,252"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="411,177,405,213,401,209,407,180"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="169,177,161,213,156,210,164,180"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="147,181,70,221,68,216,145,176"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="190,176,256,218,250,218,188,181"/>
+</map>

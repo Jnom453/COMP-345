@@ -1,0 +1,19 @@
+<map id="Map.h" name="Map.h">
+<area shape="rect" id="Node000001" title="The game map: a grid of cells with one entry and one exit." alt="" coords="277,5,335,31"/>
+<area shape="rect" id="Node000002" href="$_game_8h.html" title="The playable game: rules and game loop, without any graphics." alt="" coords="146,79,213,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,38,202,81,200,76,269,40"/>
+<area shape="rect" id="Node000006" href="$_map_8cpp.html" title=" " alt="" coords="270,79,342,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="308,44,308,80,304,77,304,49"/>
+<area shape="rect" id="Node000007" href="$_map_observer_8h.html" title="SFML view of a Map." alt="" coords="382,79,491,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="342,36,417,78,412,79,341,41"/>
+<area shape="rect" id="Node000003" href="$_game_8cpp.html" title=" " alt="" coords="5,153,87,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,114,70,154,68,150,142,110"/>
+<area shape="rect" id="Node000004" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="111,153,213,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,118,167,154,163,151,171,121"/>
+<area shape="rect" id="Node000005" href="$game__main_8cpp.html" title="The SFML window of the playable game." alt="" coords="237,153,351,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="213,111,277,152,272,152,211,116"/>
+<area shape="rect" id="Node000008" href="$_map_observer_8cpp.html" title=" " alt="" coords="375,153,498,178"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="439,118,439,154,435,151,435,122"/>
+<area shape="rect" id="Node000009" href="$main_8cpp.html" title=" " alt="" coords="522,153,596,178"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="471,110,541,152,536,152,469,115"/>
+</map>

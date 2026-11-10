@@ -1,0 +1,385 @@
+#include <optional>
+#include <string>
+
+#include <SFML/Graphics.hpp>
+
+#include "Game.h"
+#include "FontLoader.h"
+
+/**
+ * @file game_main.cpp
+ * @brief The SFML window of the playable game.
+ *
+ * Draws the Game (map, towers, critters, coins, lives) and turns mouse clicks
+ * and key presses into calls on Game. All the rules live in Game.cpp.
+ *
+ * Controls:
+ * - 1, 2, 3: choose the tower type to build (direct, area, slow)
+ * - left click on a green cell: buy and place the chosen tower
+ * - left click on a tower: select it
+ * - U: level up the selected tower (Decorator pattern, LevelUpDecorator)
+ * - P: add Splash, B: add Burning, F: add Freezing to the selected tower
+ *   (Decorator pattern, one decorator per effect)
+ * - T: change the targeting strategy of the selected tower (Strategy pattern)
+ * - S: sell the selected tower
+ * - SPACE: start the next wave
+ * - R: restart, ESC: quit
+ */
+
+namespace
+{
+// Size and position of things in the window, in pixels.
+// CELL is the side of one map cell; MAP_X / MAP_Y is where the map starts.
+const float CELL = 48.f;
+const float MAP_X = 32.f;
+const float MAP_Y = 100.f;
+const unsigned WINDOW_W = 640;
+const unsigned WINDOW_H = 790;
+
+// Colour used for each tower type (orange = direct, purple = area, cyan = slow).
+sf::Color towerColor(int type)
+{
+    if (type == Game::AREA_DAMAGE) return sf::Color(160, 90, 220);
+    if (type == Game::SLOW)        return sf::Color(60, 190, 220);
+    return sf::Color(240, 150, 40);
+}
+
+// Colour and size of a critter, by kind (the kinds come from the critter
+// factories): normal = red, fast = yellow, tank = blue-grey, boss = purple.
+sf::Color critterColor(const std::string& kind)
+{
+    if (kind == "Fast") return sf::Color(240, 220, 60);
+    if (kind == "Tank") return sf::Color(110, 130, 190);
+    if (kind == "Boss") return sf::Color(170, 40, 200);
+    return sf::Color(225, 50, 50);
+}
+
+float critterRadius(const std::string& kind)
+{
+    if (kind == "Fast") return 8.f;
+    if (kind == "Tank") return 13.f;
+    if (kind == "Boss") return 17.f;
+    return 11.f;
+}
+
+// Draws a line of text. Does nothing if no font could be loaded.
+void drawText(sf::RenderWindow& window, const sf::Font& font, bool hasFont,
+              const std::string& str, float x, float y, unsigned size,
+              sf::Color color = sf::Color::White)
+{
+    if (!hasFont)
+        return;
+    sf::Text text(font, str, size);
+    text.setFillColor(color);
+    text.setPosition({x, y});
+    window.draw(text);
+}
+
+// Draws a straight line (used for the yellow shot lines).
+void drawLine(sf::RenderWindow& window, float x1, float y1, float x2, float y2,
+              sf::Color color)
+{
+    sf::Vertex line[2];
+    line[0].position = {x1, y1};
+    line[0].color = color;
+    line[1].position = {x2, y2};
+    line[1].color = color;
+    window.draw(line, 2, sf::PrimitiveType::Lines);
+}
+}
+
+// main() has two parts that repeat every frame (about 60 times per second):
+//   1) read what the player did (mouse clicks and key presses) and tell Game,
+//   2) ask Game to advance time (game.update) and draw its current state.
+// No game rule is decided here; they are all in Game.cpp.
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode({WINDOW_W, WINDOW_H}), "Tower Defense");
+    window.setFramerateLimit(60);
+
+    sf::Font font;
+    const bool hasFont = loadSystemFont(font);
+
+    Game game; // all the rules and the state of the game
+    // What the player has chosen: the tower type to build with the next click,
+    // and the cell of the tower that is selected (-1 means none).
+    int selectedType = Game::DIRECT_DAMAGE;
+    int selectedRow = -1;
+    int selectedColumn = -1;
+    sf::Clock clock; // measures the time between two frames
+
+    while (window.isOpen())
+    {
+        // ---- 1) input: handle every event that happened since the last frame ----
+        while (const std::optional<sf::Event> event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+            {
+                window.close();
+            }
+            // Keyboard: 1/2/3 choose a tower type, SPACE starts a wave,
+            // U levels up, P/B/F add an effect, T changes the targeting
+            // strategy, S sells the selected tower, R restarts, ESC quits.
+            else if (const auto* key = event->getIf<sf::Event::KeyPressed>())
+            {
+                switch (key->code)
+                {
+                case sf::Keyboard::Key::Num1: selectedType = Game::DIRECT_DAMAGE; break;
+                case sf::Keyboard::Key::Num2: selectedType = Game::AREA_DAMAGE; break;
+                case sf::Keyboard::Key::Num3: selectedType = Game::SLOW; break;
+                case sf::Keyboard::Key::Space: game.startWave(); break;
+                case sf::Keyboard::Key::U: game.upgradeTower(selectedRow, selectedColumn); break;
+                case sf::Keyboard::Key::P: game.addEffect(selectedRow, selectedColumn, Game::SPLASH); break;
+                case sf::Keyboard::Key::B: game.addEffect(selectedRow, selectedColumn, Game::BURNING); break;
+                case sf::Keyboard::Key::F: game.addEffect(selectedRow, selectedColumn, Game::FREEZING); break;
+                case sf::Keyboard::Key::T: game.cycleStrategy(selectedRow, selectedColumn); break;
+                case sf::Keyboard::Key::S:
+                    if (game.sellTower(selectedRow, selectedColumn))
+                    {
+                        selectedRow = -1;
+                        selectedColumn = -1;
+                    }
+                    break;
+                case sf::Keyboard::Key::R:
+                    game.reset();
+                    selectedRow = -1;
+                    selectedColumn = -1;
+                    break;
+                case sf::Keyboard::Key::Escape: window.close(); break;
+                default: break;
+                }
+            }
+            // Mouse: a left click on the map selects a tower or builds a new one.
+            else if (const auto* click = event->getIf<sf::Event::MouseButtonPressed>())
+            {
+                if (click->button == sf::Mouse::Button::Left)
+                {
+                    // Turn the pixel position of the click into a row and a column.
+                    float fx = (click->position.x - MAP_X) / CELL;
+                    float fy = (click->position.y - MAP_Y) / CELL;
+                    int column = static_cast<int>(fx);
+                    int row = static_cast<int>(fy);
+                    bool inside = fx >= 0 && fy >= 0 &&
+                                  game.getMap().isInside(row, column);
+                    if (inside)
+                    {
+                        // A tower is already there: just select it.
+                        if (game.findTower(row, column) >= 0)
+                        {
+                            selectedRow = row;
+                            selectedColumn = column;
+                        }
+                        // Empty cell: try to buy and place the chosen tower
+                        // (Game checks that the cell is scenery and the player can pay).
+                        else if (game.placeTower(row, column, selectedType))
+                        {
+                            selectedRow = row;
+                            selectedColumn = column;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ---- 2) update: let the game advance by the time since the last frame ----
+        game.update(clock.restart().asSeconds());
+
+        // ---- 3) drawing: everything is drawn again each frame, back to front ----
+        window.clear(sf::Color(35, 40, 50));
+
+        // The map: one coloured square per cell (blue entry, red exit,
+        // brown path, green scenery).
+        const Map& map = game.getMap();
+        for (int r = 0; r < map.getHeight(); ++r)
+        {
+            for (int c = 0; c < map.getWidth(); ++c)
+            {
+                sf::RectangleShape cell({CELL - 2.f, CELL - 2.f});
+                cell.setPosition({MAP_X + c * CELL, MAP_Y + r * CELL});
+                int type = map.getCellType(r, c);
+                if (type == ENTRY)      cell.setFillColor(sf::Color(70, 160, 240));
+                else if (type == EXIT)  cell.setFillColor(sf::Color(230, 75, 75));
+                else if (type == PATH)  cell.setFillColor(sf::Color(190, 145, 90));
+                else                    cell.setFillColor(sf::Color(75, 165, 105));
+                window.draw(cell);
+            }
+        }
+
+        // Range of the selected tower.
+        int selectedIndex = game.findTower(selectedRow, selectedColumn);
+        if (selectedIndex >= 0)
+        {
+            const Game::PlacedTower& t = game.getPlacedTower(selectedIndex);
+            float radius = static_cast<float>(t.tower->getRange()) * CELL;
+            sf::CircleShape range(radius);
+            range.setOrigin({radius, radius});
+            range.setPosition({MAP_X + (t.column + 0.5f) * CELL - 1.f,
+                               MAP_Y + (t.row + 0.5f) * CELL - 1.f});
+            range.setFillColor(sf::Color(255, 255, 255, 40));
+            range.setOutlineColor(sf::Color(255, 255, 255, 160));
+            range.setOutlineThickness(2.f);
+            window.draw(range);
+        }
+
+        // Cover the top and bottom bars so the range circle never draws over the text.
+        sf::RectangleShape topBar({static_cast<float>(WINDOW_W), MAP_Y - 4.f});
+        topBar.setFillColor(sf::Color(35, 40, 50));
+        window.draw(topBar);
+        float mapBottom = MAP_Y + map.getHeight() * CELL;
+        sf::RectangleShape bottomBar({static_cast<float>(WINDOW_W),
+                                      static_cast<float>(WINDOW_H) - mapBottom});
+        bottomBar.setPosition({0.f, mapBottom});
+        bottomBar.setFillColor(sf::Color(35, 40, 50));
+        window.draw(bottomBar);
+
+        // Towers.
+        for (int i = 0; i < game.getTowerCount(); ++i)
+        {
+            const Game::PlacedTower& t = game.getPlacedTower(i);
+            sf::RectangleShape body({CELL - 14.f, CELL - 14.f});
+            body.setPosition({MAP_X + t.column * CELL + 6.f, MAP_Y + t.row * CELL + 6.f});
+            body.setFillColor(towerColor(t.type));
+            if (i == selectedIndex)
+            {
+                body.setOutlineColor(sf::Color::White);
+                body.setOutlineThickness(3.f);
+            }
+            window.draw(body);
+            drawText(window, font, hasFont, std::to_string(t.tower->getLevel()),
+                     MAP_X + t.column * CELL + 17.f, MAP_Y + t.row * CELL + 6.f, 24,
+                     sf::Color::Black);
+        }
+
+        // Shots (yellow lines; orange lines and dots are splash hits).
+        for (std::size_t i = 0; i < game.getShots().size(); ++i)
+        {
+            const Game::Shot& s = game.getShots()[i];
+            drawLine(window,
+                     MAP_X + (static_cast<float>(s.fromColumn) + 0.5f) * CELL - 1.f,
+                     MAP_Y + (static_cast<float>(s.fromRow) + 0.5f) * CELL - 1.f,
+                     MAP_X + (static_cast<float>(s.toColumn) + 0.5f) * CELL - 1.f,
+                     MAP_Y + (static_cast<float>(s.toRow) + 0.5f) * CELL - 1.f,
+                     s.splash ? sf::Color(255, 120, 0) : sf::Color(255, 255, 120));
+            // A splash hit also gets an orange dot on the neighbour that was hit.
+            if (s.splash)
+            {
+                sf::CircleShape mark(6.f);
+                mark.setOrigin({6.f, 6.f});
+                mark.setPosition({MAP_X + (static_cast<float>(s.toColumn) + 0.5f) * CELL - 1.f,
+                                  MAP_Y + (static_cast<float>(s.toRow) + 0.5f) * CELL - 1.f});
+                mark.setFillColor(sf::Color(255, 120, 0, 190));
+                window.draw(mark);
+            }
+        }
+
+        // Critters: a dot (colour and size depend on the kind) with a green bar
+        // showing the hit points left. An orange ring means burning and a
+        // light-blue ring means frozen.
+        for (int i = 0; i < game.getCritterCount(); ++i)
+        {
+            if (!game.isCritterOnMap(i))
+                continue;
+            double r, c;
+            game.getCritterLocation(i, r, c);
+            float cx = MAP_X + (static_cast<float>(c) + 0.5f) * CELL - 1.f;
+            float cy = MAP_Y + (static_cast<float>(r) + 0.5f) * CELL - 1.f;
+
+            const Critter& critter = game.getCritter(i);
+            float radius = critterRadius(critter.getKind());
+            sf::CircleShape dot(radius);
+            dot.setOrigin({radius, radius});
+            dot.setPosition({cx, cy});
+            dot.setFillColor(critterColor(critter.getKind()));
+            dot.setOutlineColor(sf::Color::Black);
+            dot.setOutlineThickness(2.f);
+            if (critter.isBurning())
+            {
+                dot.setOutlineColor(sf::Color(255, 140, 0));
+                dot.setOutlineThickness(3.f);
+            }
+            else if (critter.isFrozen())
+            {
+                dot.setOutlineColor(sf::Color(150, 230, 255));
+                dot.setOutlineThickness(3.f);
+            }
+            window.draw(dot);
+
+            float fraction = static_cast<float>(game.getCritter(i).getHitPoints()) /
+                             static_cast<float>(game.getCritterMaxHitPoints(i));
+            sf::RectangleShape back({26.f, 4.f});
+            back.setPosition({cx - 13.f, cy - radius - 9.f});
+            back.setFillColor(sf::Color(60, 0, 0));
+            window.draw(back);
+            sf::RectangleShape bar({26.f * fraction, 4.f});
+            bar.setPosition({cx - 13.f, cy - radius - 9.f});
+            bar.setFillColor(sf::Color(60, 230, 60));
+            window.draw(bar);
+        }
+
+        // HUD (heads-up display): coins, lives, wave number and the last message.
+        std::string waveText = "Wave " + std::to_string(game.getWave()) + "/" +
+                               std::to_string(Game::MAX_WAVES);
+        drawText(window, font, hasFont, "Coins: " + std::to_string(game.getCoins()),
+                 20.f, 12.f, 24, sf::Color(250, 210, 80));
+        drawText(window, font, hasFont, "Lives: " + std::to_string(game.getLives()),
+                 220.f, 12.f, 24, sf::Color(240, 110, 110));
+        drawText(window, font, hasFont, waveText, 420.f, 12.f, 24);
+        drawText(window, font, hasFont, game.getMessage(), 20.f, 52.f, 17,
+                 sf::Color(200, 220, 255));
+
+        // Help text under the map: tower prices, the type to build, and the
+        // stats and upgrade/sell prices of the selected tower.
+        float y = MAP_Y + map.getHeight() * CELL + 10.f;
+        std::string build = "Build: [1] " + Game::towerName(Game::DIRECT_DAMAGE) + " $" +
+                            std::to_string(Game::towerCost(Game::DIRECT_DAMAGE)) +
+                            "   [2] " + Game::towerName(Game::AREA_DAMAGE) + " $" +
+                            std::to_string(Game::towerCost(Game::AREA_DAMAGE)) +
+                            "   [3] " + Game::towerName(Game::SLOW) + " $" +
+                            std::to_string(Game::towerCost(Game::SLOW));
+        drawText(window, font, hasFont, build, 20.f, y, 14);
+        drawText(window, font, hasFont,
+                 "Selected to build: " + Game::towerName(selectedType), 20.f, y + 22.f, 16,
+                 towerColor(selectedType));
+
+        // The selected tower: its statistics, targeting strategy and effects,
+        // and the keys that change them (with the price of each change).
+        float lineY = y + 46.f;
+        if (selectedIndex >= 0)
+        {
+            const Tower& t = *game.getPlacedTower(selectedIndex).tower;
+            std::string range = std::to_string(t.getRange());
+            range = range.substr(0, range.find('.') + 2);
+            drawText(window, font, hasFont,
+                     t.getName() + "  Lv " + std::to_string(t.getLevel()) +
+                     "  Power " + std::to_string(t.getPower()) + "  Range " + range,
+                     20.f, lineY, 15);
+            drawText(window, font, hasFont,
+                     "Targeting [T]: " + t.getStrategy()->getName(),
+                     20.f, lineY + 20.f, 14, sf::Color(250, 210, 80));
+            std::string effects = t.getEffects();
+            drawText(window, font, hasFont,
+                     "Effects: " + (effects.empty() ? std::string("none") : effects),
+                     20.f, lineY + 38.f, 14, sf::Color(150, 230, 255));
+            std::string upgrade = t.getLevel() >= t.getMaxLevel()
+                ? std::string("[U] max level")
+                : "[U] level up $" + std::to_string(t.getUpgradeCost());
+            drawText(window, font, hasFont,
+                     upgrade + "   [S] sell $" + std::to_string(t.getRefundValue()),
+                     20.f, lineY + 56.f, 14);
+            drawText(window, font, hasFont,
+                     "Add: [P] " + Game::effectName(Game::SPLASH) + " $" +
+                     std::to_string(Game::effectCost(Game::SPLASH)) +
+                     "  [B] " + Game::effectName(Game::BURNING) + " $" +
+                     std::to_string(Game::effectCost(Game::BURNING)) +
+                     "  [F] " + Game::effectName(Game::FREEZING) + " $" +
+                     std::to_string(Game::effectCost(Game::FREEZING)),
+                     20.f, lineY + 74.f, 14);
+        }
+        drawText(window, font, hasFont,
+                 "Click a green cell to build | SPACE start wave | R restart | ESC quit",
+                 20.f, lineY + 100.f, 14, sf::Color(170, 170, 170));
+
+        window.display();
+    }
+    return 0;
+}

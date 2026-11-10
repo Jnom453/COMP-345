@@ -1,0 +1,9 @@
+<map id="AreaDamageTower.h" name="AreaDamageTower.h">
+<area shape="rect" id="Node000001" title="Tower that damages several critters at once." alt="" coords="155,5,297,31"/>
+<area shape="rect" id="Node000002" href="$_area_damage_tower_8cpp.html" title=" " alt="" coords="5,79,162,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,38,109,81,107,76,186,38"/>
+<area shape="rect" id="Node000003" href="$_game_8cpp.html" title=" " alt="" coords="186,79,267,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,45,228,80,224,77,224,48"/>
+<area shape="rect" id="Node000004" href="$_tests___a3_8cpp.html" title="Console test cases for the three design patterns of Assignment 3." alt="" coords="292,79,393,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,37,325,78,320,78,258,42"/>
+</map>

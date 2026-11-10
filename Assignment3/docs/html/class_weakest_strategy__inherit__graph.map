@@ -1,0 +1,5 @@
+<map id="WeakestStrategy" name="WeakestStrategy">
+<area shape="rect" id="Node000001" title="Strategy: the weakest critter, meaning the one with the fewest hit points left." alt="" coords="6,79,128,105"/>
+<area shape="rect" id="Node000002" href="$class_targeting_strategy.html" title="Strategy interface: chooses one target among the critters in range." alt="" coords="5,5,129,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,45,70,79,64,78,65,48"/>
+</map>

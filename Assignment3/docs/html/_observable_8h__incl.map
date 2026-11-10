@@ -1,0 +1,9 @@
+<map id="Observable.h" name="Observable.h">
+<area shape="rect" id="Node000001" title="Subject side of the Observer design pattern." alt="" coords="93,5,191,31"/>
+<area shape="rect" id="Node000002" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="5,79,90,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,31,77,72,74,67,124,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,79,171,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,29,145,64,140,62,140,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="194,79,269,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,29,207,69,202,69,156,34"/>
+</map>

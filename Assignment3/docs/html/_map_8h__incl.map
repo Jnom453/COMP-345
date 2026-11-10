@@ -1,0 +1,14 @@
+<map id="Map.h" name="Map.h">
+<area shape="rect" id="Node000001" title="The game map: a grid of cells with one entry and one exit." alt="" coords="35,5,92,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,153,63,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,34,38,54,26,80,23,109,28,138,22,138,18,109,21,78,34,51,53,29"/>
+<area shape="rect" id="Node000003" href="$_cell_8h.html" title="One square of the game map and its possible types." alt="" coords="36,79,91,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="64,29,66,64,61,63,63,34"/>
+<area shape="rect" id="Node000004" href="$_observable_8h.html" title="Subject side of the Observer design pattern." alt="" coords="116,79,214,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="81,29,137,69,132,71,80,34"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="144,107,70,147,68,143,141,103"/>
+<area shape="rect" id="Node000005" href="$_observer_8h.html" title="Observer side of the Observer design pattern." alt="" coords="104,153,188,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="164,103,155,139,151,136,160,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="213,153,287,178"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="180,103,227,143,222,143,178,108"/>
+</map>

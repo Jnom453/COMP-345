@@ -1,0 +1,13 @@
+<map id="EffectDecorator" name="EffectDecorator">
+<area shape="rect" id="Node000001" title="A decorator that applies an extra effect to every critter its tower hits." alt="" coords="84,226,198,252"/>
+<area shape="rect" id="Node000005" href="$class_burning_decorator.html" title="Burning effect: the damage of a hit is re&#45;applied for a few seconds." alt="" coords="5,300,128,326"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="120,262,81,302,77,298,115,263"/>
+<area shape="rect" id="Node000006" href="$class_freezing_decorator.html" title="Freezing effect: a hit also slows the critter down for a short time." alt="" coords="152,300,280,326"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="166,260,206,300,201,300,164,265"/>
+<area shape="rect" id="Node000002" href="$class_tower_decorator.html" title="A Tower that wraps another Tower and forwards everything to it." alt="" coords="84,153,198,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,192,144,227,139,225,140,196"/>
+<area shape="rect" id="Node000003" href="$class_tower.html" title="Base class of every tower in the game." alt="" coords="113,79,169,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,118,144,153,139,152,140,123"/>
+<area shape="rect" id="Node000004" href="$class_observable.html" title="Base class for objects that notify observers of changes." alt="" coords="98,5,185,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="142,44,144,79,139,78,140,49"/>
+</map>
